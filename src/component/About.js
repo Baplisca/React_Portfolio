@@ -12,7 +12,7 @@ class About extends React.Component{
                         <li class="no">横田　光悦 (Koetsu Yokota)</li>
                         <li class="no">東北大学大学院 情報科学研究科 応用情報科学専攻 修士1年</li>
                         <li class="no"><a href="https://www.smapip.is.tohoku.ac.jp/" title="田中大関研究室ホームページ"
-                            target="_blank">田中・大関研究室</a></li>
+                            rel="noreferrer noopener" target="_blank">田中・大関研究室</a></li>
                     <br/>
                     </ul>
 
@@ -41,7 +41,7 @@ class About extends React.Component{
 
             <h2>Qualifications</h2>
             <ul><br/>
-                <li><a href="https://www.jitec.ipa.go.jp/1_11seido/ap.html" target="_blank">応用情報技術者試験</a> (AP) 合格
+                <li><a href="https://www.jitec.ipa.go.jp/1_11seido/ap.html" rel="noreferrer noopener" target="_blank">応用情報技術者試験</a> (AP) 合格
                     2017.10</li>
                 <br/>
                 <li>TOEIC 750 2019.3</li>
@@ -59,15 +59,15 @@ class About extends React.Component{
             <h2>Intern</h2>
             <ul><br/>
                 <li>MUIT 2020.8 (3日間) <a href="https://baplisca.hatenablog.com/entry/intern/muit"
-                        target="_blank">インターン感想</a></li>
+                        rel="noreferrer noopener" target="_blank">インターン感想</a></li>
                 <br/>
                 <li>大和証券 金融商品開発・デリバティブ算定モデル開発・リスクマネジメント業務体験コース 2020.8.24 ~ 2020.8.28 (5日間)</li>
                 <br/>
                 <li>Amazon Web Services SA 2020.8.31 ~ 2020.9.2 (3日間)　<a
-                        href="https://baplisca.hatenablog.com/entry/intern/aws" target="_blank">インターン感想</a></li>
+                        rel="noreferrer noopener" href="https://baplisca.hatenablog.com/entry/intern/aws" target="_blank">インターン感想</a></li>
                 <br/>
                 <li>日鉄ソリューションズ (NSSOL)　研究開発 2020.9.7 ~ 2020.9.25 (3週間)
-                    <a href="https://baplisca.hatenablog.com/entry/intern/nssol" target="_blank">インターン感想</a>
+                    <a href="https://baplisca.hatenablog.com/entry/intern/nssol" rel="noreferrer noopener" target="_blank">インターン感想</a>
                 </li>
                 <br/>
             </ul>
@@ -75,20 +75,21 @@ class About extends React.Component{
             <h2>Awards (Official)</h2>
             <ul><br/>
                 <li><a href="https://www.softbank.jp/corp/news/press/sbkk/2019/20191015_02/"
-                        target="_blank">ソフトバンクAI人材育成スカラーシップ</a> 2020.4 ~ 2021.3</li>
+                        rel="noreferrer noopener" target="_blank">ソフトバンクAI人材育成スカラーシップ</a> 2020.4 ~ 2021.3</li>
                 <br/>
             </ul>
             <h2>Pastime</h2>
             <ul><br/>
                 <li>麻雀</li>
                 <br/>
-                <li><a href="https://atcoder.jp/users/Baplisca" target="_blank">競技プログラミング</a></li>
+                <li><a href="https://atcoder.jp/users/Baplisca" rel="noreferrer noopener" target="_blank">競技プログラミング</a></li>
+                <li class ="no"><a href="https://atcoder.jp/users/Baplisca" rel="noreferrer noopener" target="_blank" title="Baplisca"><img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fatcoder-badges.now.sh%2Fapi%2Fatcoder%2Fjson%2FBaplisca" alt="競技プログラミング レート"/></a></li>
                 <br/>
                 <li>ピアノ (キーボード)</li>
                 <br/>
                 <li>野球観戦</li>
                 <br/>
-                <li><a href="works.html" 　target="_blank">ゲーム制作</a></li>
+                <li><a href= 'work' rel="noreferrer noopener"　target="_blank">ゲーム制作</a></li>
                 <br/>
             </ul>
 
@@ -97,19 +98,19 @@ class About extends React.Component{
                 <ul><br/>
                     <li className="no">2020.10.12
                     <li className="no"><a href="https://baplisca.hatenablog.com/entry/intern/nssol"
-                            target="_blank">NSSOLインターンのブログリンク追加</a></li>
+                            rel="noreferrer noopener" target="_blank">NSSOLインターンのブログリンク追加</a></li>
                     </li>
                     <hr className = "updatehr" />
                     <br/>
                     <li className="no">2020.10.5
                     <li className="no"><a href="https://baplisca.hatenablog.com/entry/supporterz-1on1"
-                            target="_blank">エンジニア1on1に参加しました</a></li>
+                            rel="noreferrer noopener" target="_blank">エンジニア1on1に参加しました</a></li>
                     </li>
                     <hr className = "updatehr" />
                     <br/>
                     <li className="no">2020.9.26
                     <li className="no"><a href="https://baplisca.hatenablog.com/entry/supporterz-geekten"
-                            target="_blank">技育展に登壇しました</a></li>
+                            rel="noreferrer noopener" target="_blank">技育展に登壇しました</a></li>
                     </li>
                     <hr className = "updatehr" />
                     <br/>

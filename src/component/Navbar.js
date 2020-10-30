@@ -39,7 +39,7 @@ class Navbar extends Component {
                     }
                     nav ul li {
                         display: table-cell;
-                        min-width: 50px;
+                        min-width: 20vw;
                     }
                     nav ul li a {
                         display: block;

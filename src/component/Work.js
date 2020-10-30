@@ -115,16 +115,16 @@ class Work extends React.Component{
                     </ol>
                 </details>
                 <p>ライブラリは整備したのち、GitHubに公開します</p>
-                <p>GitHubアカウントは<a href="https://github.com/Baplisca/" target="_blank">Baplisca</a>です</p>
+                <p>GitHubアカウントは<a href="https://github.com/Baplisca/" rel="noreferrer noopener" target="_blank">Baplisca</a>です</p>
                 <br /> <br />
 
                 <h2>海洋生物たちの復讐</h2>
                 <p>大学1年次に制作した初めてのゲーム作品です</p>
                 <p>縦スクロールシューティングゲームで, C言語とDXライブラリを用いました</p>
                 <div className = "center">
-                    <img src= {game1_1} width="320px" height="200px" />
-                    <img src= {game1_2} width="320px" height="200px" />
-                    <img src= {game1_3} width="320px" height="200px" />
+                    <img src= {game1_1} alt="海洋生物たちの復讐 画像1" width="320px" height="200px" />
+                    <img src= {game1_2} alt="海洋生物たちの復讐 画像2" width="320px" height="200px" />
+                    <img src= {game1_3} alt="海洋生物たちの復讐 画像3" width="320px" height="200px" />
                 </div>
                 <br/>
 
@@ -135,21 +135,21 @@ class Work extends React.Component{
                         <div className="youtube">
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/c98LeJbuA24" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+                                allowfullscreen title = "Game1_1"></iframe>
                         </div>
                         </p>
                         <p>
                         <div className="youtube">
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/pgpB8KDjwEI" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+                                allowfullscreen title = "Game1_2"></iframe>
                         </div>
                         </p>
                         <p>
                         <div className="youtube">
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/aorVrGWEC6M" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+                                allowfullscreen title = "Game1_3"></iframe>
                         </div>
                         </p>
                     </div>
@@ -158,16 +158,16 @@ class Work extends React.Component{
 
                 <h2>ボイストラベラー (Voice Traveler)</h2>
                 <p>音声認識と自身の声を周波数に変換して操作する前例のない世界初の音声アクションゲームです</p>
-                <p>音声認識エンジンは<a href="https://julius.osdn.jp/" target="_blank">Julius</a>, 周波数変換は高速フーリエ変換 (FFT)
+                <p>音声認識エンジンは<a href="https://julius.osdn.jp/" rel="noreferrer noopener" target="_blank">Julius</a>, 周波数変換は高速フーリエ変換 (FFT)
                     をゲームエンジンUnityに組み込みました</p>
                 <p>言語はC#です</p>
-                <p>サポーターズさんの<a href="https://talent.supporterz.jp/geekten/2020/" target="_blank">技育展</a>に登壇しました</p>
+                <p>サポーターズさんの<a href="https://talent.supporterz.jp/geekten/2020/" rel="noreferrer noopener" target="_blank">技育展</a>に登壇しました</p>
 
                 <div className = "center">
-                    <img src= {game3_1} width="320px" height="160px" />
-                    <img src= {game3_2} width="320px" height="160px" />
-                    <img src= {game3_3} width="320px" height="160px" />
-                    <img src= {game3_4} width="320px" height="160px" />
+                    <img src= {game3_1} alt="ボイストラベラー 画像1" width="320px" height="160px" />
+                    <img src= {game3_2} alt="ボイストラベラー 画像2" width="320px" height="160px" />
+                    <img src= {game3_3} alt="ボイストラベラー 画像3" width="320px" height="160px" />
+                    <img src= {game3_4} alt="ボイストラベラー 画像4" width="320px" height="160px" />
                 </div>
                 <br />
 
@@ -182,35 +182,35 @@ class Work extends React.Component{
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/vHEbxELAfvk"
                                 frameborder="100"
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+                                allowfullscreen title = "Game3_Title"></iframe>
                         </div>
                         </p>
                         <p>
                         <div className="youtube">
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/QdMbt3f5IYI" frameborder="0"
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+                                allowfullscreen title = "Game3_1"></iframe>
                         </div>
                         </p>
                         <p>
                         <div className="youtube">
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/7fT2p6J7vUk" frameborder="0"
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+                                allowfullscreen title = "Game3_2"></iframe>
                         </div>
                         </p>
                         <p>
                         <div className="youtube">
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/zQmdL67HYJE" frameborder="0"
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+                                allowfullscreen title = "Game3_3"></iframe>
                         </div>
                         </p>
                         <p>
                         <div className="youtube">
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/qmUH2qNrAQw" frameborder="0"
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+                                allowfullscreen title = "Game3_4"></iframe>
                         </div>
                         </p>
                     </div>
@@ -222,10 +222,10 @@ class Work extends React.Component{
                 <p>規模がデカすぎて, 制作は中断しています</p>
                 <p>言語はC#で, ゲームエンジンはUnityを使用しています</p>
                 <div className = "center">
-                    <img src= {game2_1} width="320px" height="160px" />
-                    <img src= {game2_2} width="320px" height="160px" />
-                    <img src= {game2_3} width="320px" height="160px" />
-                    <img src= {game2_4} width="320px" height="160px" />
+                    <img src= {game2_1} alt="タダノアクション 画像1" width="320px" height="160px" />
+                    <img src= {game2_2} alt="タダノアクション 画像2" width="320px" height="160px" />
+                    <img src= {game2_3} alt="タダノアクション 画像3" width="320px" height="160px" />
+                    <img src= {game2_4} alt="タダノアクション 画像4" width="320px" height="160px" />
                 </div><br />
 
                 <details>
@@ -237,35 +237,35 @@ class Work extends React.Component{
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/js8clKiCJh4"
                                 frameborder="100"
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+                                allowfullscreen title = "Game2_1"></iframe>
                         </div>
                         </p>
                         <p>
                         <div className="youtube">
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/LSHmVqN65Hg" frameborder="0"
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+                                allowfullscreen title = "Game2_2"></iframe>
                         </div>
                         </p>
                         <p>
                         <div className="youtube">
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/eoaY_FXo4lg" frameborder="0"
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+                                allowfullscreen title = "Game2_3"></iframe>
                         </div>
                         </p>
                         <p>
                         <div className="youtube">
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/AwZZk7FH7T4" frameborder="0"
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+                                allowfullscreen title = "Game2_4"></iframe>
                         </div>
                         </p>
                         <p>
                         <div className="youtube">
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/vP6oiT5K1Lw" frameborder="0"
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+                                allowfullscreen title = "Game2_5"></iframe>
                         </div>
                         </p>
                     </div>
@@ -276,17 +276,17 @@ class Work extends React.Component{
                 <p>「ヒューリスティックソルバーによる安定した電力システムの構築と量子アニーリングによる比較」というテーマで研究を行いました.</p>
                 <p>以下が研究の成果物の一部になります.</p>
                 <p>こちらが<a href="https://journals.aps.org/pre/abstract/10.1103/PhysRevE.80.046112"
-                        target="_blank">先行研究のアルゴリズム</a>にしたがって, 最適化を行った図です.</p>
+                        rel="noreferrer noopener" target="_blank">先行研究のアルゴリズム</a>にしたがって, 最適化を行った図です.</p>
                 <div className = "center">
-                    <img src= {heuristic} width="500px" height="500px" />
+                    <img src= {heuristic} alt="電力最適化シミュレーション結果" width="500px" height="500px" />
                     <br />
                 </div>
                 <p>量子アニーリングを用いて, 最適化すると, 下の図のようになります.<br />
                     <div className = "center">(1枚目最適化前, 2枚目最適化後)</div>
                 </p>
                 <div className = "center">
-                    <img src= {pre_annealing} width="320px" height="320px" />
-                    <img src= {aft_annealing} width="320px" height="320px" />
+                    <img src= {pre_annealing} alt="電力最適化前"　width="320px" height="320px" />
+                    <img src= {aft_annealing} alt="電力最適化後" width="320px" height="320px" />
                 </div><br />
 
                 <p>言語はPythonで, グラフィックライブラリはNetworkXを用いました.</p>
@@ -297,9 +297,9 @@ class Work extends React.Component{
                 <p>プラットフォームはWeb, Androidで言語はHTML, CSS, JavaScript, Javaで, IDEはAndroid Studioを使用しています</p>
                 <p>下の図はAndroidでの表示になります</p>
                 <div className = "center">
-                    <img src= {tapitapi1} width="211px" height="498px" />
-                    <img src= {tapitapi2} width="211px" height="498px" />
-                    <img src= {tapitapi3} width="211px" height="498px" />
+                    <img src= {tapitapi1} alt="タピタピ 画像1" width="211px" height="498px" />
+                    <img src= {tapitapi2} alt="タピタピ 画像2" width="211px" height="498px" />
+                    <img src= {tapitapi3} alt="タピタピ 画像3" width="211px" height="498px" />
                 </div><br />
 
                 <br /><br />
