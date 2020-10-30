@@ -194,12 +194,6 @@ class About extends React.Component{
             li.no {
                 list-style-type: none;
             }
-            h2 {
-                font-size: 20px;
-                margin: 0px 0px 0px 0px;
-                padding: 4px 0px 4px 7px;
-                border-bottom: 2px solid #999999;
-            }
             hr {
                 border-width: 1px 0px 0px 0px;
                 border-style: solid;

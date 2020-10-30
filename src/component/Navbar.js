@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 class Navbar extends Component {
     render() {
@@ -19,6 +19,12 @@ class Navbar extends Component {
                 </div>
                 <style jsx>
                     {`
+                    h2 {
+                        font-size: 20px;
+                        margin: 0px 0px 0px 0px;
+                        padding: 4px 0px 4px 7px;
+                        border-bottom: 2px solid #999999;
+                    }
                     .navvar {
                         text-align: left;
                         background-color: #e4e9ec6c;
@@ -60,7 +66,7 @@ class Navbar extends Component {
                         border-radius: 10px;
                     }
                 `}
-            </style>
+                </style>
             </React.Fragment>
         )
     }
