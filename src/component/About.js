@@ -1,5 +1,6 @@
 import React from 'react';
 import MediaQuery from 'react-responsive';
+import { Link } from 'react-router-dom';
 
 //Class Component
 class About extends React.Component{
@@ -90,7 +91,7 @@ class About extends React.Component{
                 <br/>
                 <li>野球観戦</li>
                 <br/>
-                <li><a href= 'work' rel="noreferrer noopener"　target="_blank">ゲーム制作</a></li>
+                <li><Link to="/work">ゲーム制作</Link></li>
                 <br/>
             </ul>
 
