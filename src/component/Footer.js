@@ -12,7 +12,7 @@ class Footer extends React.Component{
             <hr color="#999999" /> 
 
             <div id="footer">
-                <div className="flex">
+                <div className= "footer_list">
                     <a href= "https://twitter.com/sooooouls" rel="noreferrer noopener" target="_blank"><img src= {twitter} alt="Twitter アイコン"　width="60px"
                             height="60px" /></a>
                     <a href="https://github.com/Baplisca" rel="noreferrer noopener" target="_blank"><img src= {github} alt="GitHub アイコン" width="60px"
@@ -30,21 +30,13 @@ class Footer extends React.Component{
                 clear: left;
                 text-align: center;
             }
-            /* flex説明　https://xn--web-oi9du9bc8tgu2a.com/css-basis-flex/ */
-            .flex {
-                padding: 2.5% 0;
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
+            .footer_list{
+                display:inline-block;
+                margin: 0 8px;
             }
-            .flex>* {
-                width: 8%;
-                background: #fff;
-                font-size: 64px;
-                text-align: center;
-            }
-            .flex, .flex>* {
-                border: 0px solid #aaa;
+            .footer_list img {
+                width: 60px;
+                height: 60px;
             }
             `}
             </style>

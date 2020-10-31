@@ -1,4 +1,5 @@
 import React from 'react';
+import MediaQuery from 'react-responsive';
 
 //Class Component
 class About extends React.Component{
@@ -172,14 +173,6 @@ class About extends React.Component{
         </div> 
         <style jsx>
         {`
-            #contents {
-                margin: 0px auto 0px auto;
-                padding: 30px 0px 0px 0px;
-                width: 800px;
-                line-height: 150%;
-                color: #333333;
-                font-size: 16px;
-            }
             .updatehr{
                 margin-right:50px;
                 color:"#999999";
@@ -203,6 +196,34 @@ class About extends React.Component{
             }
         `}
         </style>
+        <MediaQuery query='(min-width: 800px)'>
+        <style jsx>
+        {`
+        #contents {
+            margin: 0px auto 0px auto;
+            padding: 30px 0px 0px 0px;
+            width: 800px;
+            line-height: 150%;
+            color: #333333;
+            font-size: 16px;
+        }
+        `}
+        </style>
+        </MediaQuery>
+        <MediaQuery query='(max-width: 800px)'>
+        <style jsx>
+        {`
+        #contents {
+            margin: 0px auto 0px auto;
+            padding: 30px 0px 0px 0px;
+            width: 95%;
+            line-height: 150%;
+            color: #333333;
+            font-size: 14px;
+        }
+        `}
+        </style>
+        </MediaQuery>
         </React.Fragment>
         );
     }

@@ -11,7 +11,7 @@ import Footer from './component/Footer';
 
 ReactDOM.render(
   <BrowserRouter>
-  <Header />
+  {/*<Header /> */}
   <Navbar />
   <Route exact path = {'/'} component = {Home}/>
   <Route path = {'/about'} component = {About}/>

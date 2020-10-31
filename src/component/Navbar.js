@@ -24,10 +24,11 @@ class Navbar extends Component {
                         margin: 0px 0px 0px 0px;
                         padding: 4px 0px 4px 7px;
                         border-bottom: 2px solid #999999;
+                        
                     }
                     .navvar {
                         text-align: left;
-                        background-color: #e4e9ec6c;
+                        background-color: #343a40;
                     }
                     /* ヘッダメニュー参考URL https://www.e-sanwa.co.jp/sbs/column/20180323/ 背景カラー＋シンプルメニュー */
                     nav ul {
@@ -36,17 +37,19 @@ class Navbar extends Component {
                         padding: 0;
                         width: 50%;
                         text-align: center;
+                        color: #ffffff;
                     }
                     nav ul li {
                         display: table-cell;
                         min-width: 20vw;
+                        color: #ffffff;
                     }
                     nav ul li a {
                         display: block;
                         width: 100%;
                         padding: 10px 0;
                         text-decoration: none;
-                        color: #555;
+                        color: #ffffff;
                         font-weight: bold;
                         transition: 0s;
                     }
@@ -56,12 +59,12 @@ class Navbar extends Component {
                         border-radius: 10px;
                     }
                     nav ul li.current a {
-                        color: #555;
+                        color: #ffffff;
                         border: none;
                         border-radius: 10px;
                     }
                     nav ul li:hover {
-                        background-color: #e4e9ecfb;
+                        background-color: #555;
                         border: none;
                         border-radius: 10px;
                     }

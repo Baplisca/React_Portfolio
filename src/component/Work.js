@@ -1,4 +1,5 @@
 import React from 'react';
+import MediaQuery from 'react-responsive';
 
 import game1_1 from '../images/Game1-1.jpeg';
 import game1_2 from '../images/Game1-2.jpeg';
@@ -307,14 +308,6 @@ class Work extends React.Component{
 
                 <style jsx>
                 {`
-                    #contents {
-                        margin: 0px auto 0px auto;
-                        padding: 30px 0px 0px 0px;
-                        width: 800px;
-                        line-height: 150%;
-                        color: #333333;
-                        font-size: 16px;
-                    }
                     ul {
                         list-style-type: square;
                     }
@@ -349,6 +342,41 @@ class Work extends React.Component{
                     }
                 `}
                 </style>
+                <MediaQuery query='(min-width: 800px)'>
+                <style jsx>
+                {`
+                #contents {
+                    margin: 0px auto 0px auto;
+                    padding: 30px 0px 0px 0px;
+                    width: 800px;
+                    line-height: 150%;
+                    color: #333333;
+                    font-size: 16px;
+                }
+                `}
+                </style>
+                </MediaQuery>
+                <MediaQuery query='(max-width: 800px)'>
+                <style jsx>
+                {`
+                #contents {
+                    margin: 0px auto 0px auto;
+                    padding: 30px 0px 0px 0px;
+                    width: 95%;
+                    line-height: 150%;
+                    color: #333333;
+                    font-size: 14px;
+                }
+                /*　画像をスマホサイズに縮小してくれる */
+                img {
+                    max-width: 100%;
+                    height: auto;
+                    width/***/
+                    : auto;
+                }
+                `}
+                </style>
+                </MediaQuery>
             </React.Fragment>
         );
     }

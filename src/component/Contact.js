@@ -1,4 +1,5 @@
 import React from 'react';
+import MediaQuery from 'react-responsive';
 
 //Class Component
 class Contact extends React.Component{
@@ -18,6 +19,8 @@ class Contact extends React.Component{
             </div>
             <br /><br /><br />
             </div>
+            
+            <MediaQuery query='(min-width: 800px)'>
             <style jsx>
             {`
             #contents {
@@ -44,6 +47,34 @@ class Contact extends React.Component{
             }
             `}
             </style>
+            </MediaQuery>
+            <MediaQuery query='(max-width: 800px)'>
+            <style jsx>
+            {`
+            #contents {
+                margin: 0px auto 0px auto;
+                padding: 30px 0px 0px 0px;
+                width: 95%;
+                line-height: 150%;
+                color: #333333;
+                font-size: 14px;
+            }
+            .google_map {
+                position: relative;
+                width: 100%;
+                height: 0;
+                padding-top: 75%;
+            }
+            .google_map iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+            `}
+            </style>
+            </MediaQuery>
             </React.Fragment>
         );
     }
