@@ -18,7 +18,7 @@ class Home extends React.Component{
             .Home{
                 position: absolute;
                 max-height:95%;
-                max-width:100%;
+                width:100%;
                 overflow: hidden;
             }
             .Home img {
