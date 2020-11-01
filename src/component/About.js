@@ -8,6 +8,7 @@ class About extends React.Component{
         super(props,context)
         
         let allItems = [
+            {value:<a href="https://baplisca.herokuapp.com/">React適用に伴うサイト移動</a>, date:"2020.11.1"},
             {value:<a href="https://www.youtube.com/channel/UCUEUc2teEFnYEXG-MtEncrA/playlists"
             rel="noreferrer noopener" target="_blank">TadanoAction3DXGameのYoutube追加</a>, date:"2020.10.16"},
             {value:<a href="https://baplisca.hatenablog.com/entry/intern/nssol"
