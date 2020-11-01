@@ -1,5 +1,6 @@
 import React from 'react';
 import MediaQuery from 'react-responsive';
+import Footer from './Footer.js';
 
 //Class Component
 class Contact extends React.Component{
@@ -8,9 +9,7 @@ class Contact extends React.Component{
             <React.Fragment>
             <div id="contents">
             <h2>Contact</h2>
-            <p>Mail: koetsu.yokota.s2 at dc.tohoku.ac.jp</p>
-            <p>送信する際にはatを@に変換してください</p><br />
-            <p>Twitterは, Baplisca (<a href="https://twitter.com/sooooouls" rel="noreferrer noopener" target="_blank">@sooooouls</a>) です</p><br />
+            <Footer />
             <p>研究室は, ピン留めした4階の406が学生部屋です</p>
 
             <div className="google_map">

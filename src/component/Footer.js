@@ -9,8 +9,7 @@ class Footer extends React.Component{
     render(){
         return(
             <React.Fragment>
-            <hr color="#999999" /> 
-
+            <br />
             <div id="footer">
                 <div className= "footer_list">
                     <a href= "https://twitter.com/sooooouls" rel="noreferrer noopener" target="_blank"><img src= {twitter} alt="Twitter アイコン"　width="60px"
@@ -20,7 +19,6 @@ class Footer extends React.Component{
                     <a href="https://baplisca.hatenablog.com/" rel="noreferrer noopener" target="_blank"><img src= {hatena} alt="はてなブログ アイコン"
                             width="60px" height="60px" /></a>
                 </div>
-                <p>This homepage is operated by Baplisca.</p>
             </div>
             <style jsx>
             {`

@@ -14,11 +14,15 @@ class Home extends React.Component{
 
             <style jsx>
             {`
+            {/* 下記の設定 https://webdesignday.jp/inspiration/technique/css/7976/ */}
+            .Home{
+                position: absolute;
+                max-height:95%;
+                max-width:100%;
+                overflow: hidden;
+            }
             .Home img {
-                heigth: 100%;
-                width: auto;
                 position:relative;
-                object-fit: cover;
                 z-index: -1;
             }
             {/* 下の説明 https://arts-factory.net/position/ */}

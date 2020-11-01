@@ -7,7 +7,6 @@ import Home from './component/Home';
 import About from './component/About';
 import Work from './component/Work';
 import Contact from './component/Contact';
-import Footer from './component/Footer';
 
 ReactDOM.render(
   <BrowserRouter>
@@ -17,7 +16,6 @@ ReactDOM.render(
   <Route path = {'/about'} component = {About}/>
   <Route path = {'/work'} component = {Work}/>
   <Route path={'/contact'} component = {Contact}/>
-  <Footer />
   </BrowserRouter>
   ,document.getElementById('root')
 );
