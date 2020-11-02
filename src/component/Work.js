@@ -24,7 +24,6 @@ import tapitapi1 from '../images/tapitapi1.png';
 import tapitapi2 from "../images/tapitapi2.png";
 import tapitapi3 from "../images/tapitapi3.png";
 
-
 //Class Component
 class Work extends React.Component{
     render(){
