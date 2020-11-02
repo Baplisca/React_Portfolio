@@ -2,14 +2,21 @@ import React from 'react';
 
 import Guam from '../images/Guam.jpg'
 
+const style1 = {
+    height: `100vh`,
+    width: `100vw`,
+    backgroundImage: `url(${Guam})`, 
+    backgroundSize: `cover`
+};
+   
 //Class Component
 class Home extends React.Component{
+    
     render(){
         return(
             <React.Fragment>
-            <div className = "Home">
+            <div className = "Home" style={style1}>
                 <h2>Welcome Baplisca's Homepage</h2>
-                <img src= {Guam} alt="グアム写真"/>
             </div>
 
             <style jsx>
@@ -17,13 +24,7 @@ class Home extends React.Component{
             {/* 下記の設定 https://webdesignday.jp/inspiration/technique/css/7976/ */}
             .Home{
                 position: absolute;
-                max-height:95%;
-                width:100%;
                 overflow: hidden;
-            }
-            .Home img {
-                position:relative;
-                z-index: -1;
             }
             {/* 下の説明 https://arts-factory.net/position/ */}
             .Home h2{
