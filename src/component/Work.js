@@ -1,5 +1,6 @@
 import React from 'react';
 import MediaQuery from 'react-responsive';
+import Image from '../component/Image'
 
 import game1_1 from '../images/Game1-1.jpeg';
 import game1_2 from '../images/Game1-2.jpeg';
@@ -278,8 +279,7 @@ class Work extends React.Component{
                 <p>こちらが<a href="https://journals.aps.org/pre/abstract/10.1103/PhysRevE.80.046112"
                         rel="noreferrer noopener" target="_blank">先行研究のアルゴリズム</a>にしたがって, 最適化を行った図です.</p>
                 <div className = "center">
-                    <img src= {heuristic} alt="電力最適化シミュレーション結果" width="500px" height="500px" />
-                    <br />
+                    <Image url= {heuristic} alt="電力最適化シミュレーション結果" width="800px" height="800px" />
                 </div>
                 <p>量子アニーリングを用いて, 最適化すると, 下の図のようになります.<br />
                     <div className = "center">(1枚目最適化前, 2枚目最適化後)</div>
