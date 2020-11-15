@@ -1,24 +1,19 @@
 import React from 'react';
 
-import Guam from '../images/Guam.jpg'
-
-const style1 = {
-    height: `100vh`,
-    width: `100vw`,
-    backgroundImage: `url(${Guam})`, 
-    backgroundSize: `cover`
-};
-   
+const Guam = require('../images/Guam.jpg');
 //Class Component
 class Home extends React.Component{
-    
+    constructor(props){
+        super(props)
+    }
     render(){
         return(
             <React.Fragment>
-            <div className = "Home" style={style1}>
-                <h2>Welcome Baplisca's Homepage</h2>
+            <div className = "Home"> 
+            <img style = {{height: '100vh',width: '100vw', backgroundSize: 'cover', 
+            verticalAlign: 'bottom' }} src={Guam} alt = "グアムの写真" />
+            <h2>Welcome Baplisca's Homepage</h2>
             </div>
-
             <style jsx>
             {`
             {/* 下記の設定 https://webdesignday.jp/inspiration/technique/css/7976/ */}
