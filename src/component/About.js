@@ -111,6 +111,7 @@ class About extends React.Component{
                 </li>
                 <br/>
                 <li>楽天　Webアプリケーションエンジニア (3ヶ月)</li>
+                <br/>
             </ul>
 
             <h2>Awards (Official)</h2>
