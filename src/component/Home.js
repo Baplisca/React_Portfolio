@@ -22,9 +22,6 @@ const H2Wrapper = styled.h2`
 `;
 //Class Component
 class Home extends React.Component{
-    constructor(props){
-        super(props)
-    }
     render(){
         return(
             <React.Fragment>
