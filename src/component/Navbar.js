@@ -1,10 +1,19 @@
 import React, { Component } from 'react';
+import styled from 'styled-components';
 import {Link} from 'react-router-dom';
+
+const NavWrapper = styled.div`
+position: relative; /* for IE11 */
+positon: fixed;
+top: 0px;
+z-index: 100;
+`;
 
 class Navbar extends Component {
     render() {
         return (
             <React.Fragment>
+                <NavWrapper>
                 <div className="navvar">
                     <h2>
                         <nav>
@@ -17,6 +26,7 @@ class Navbar extends Component {
                         </nav>
                     </h2>
                 </div>
+                </NavWrapper>
                 <style jsx>
                     {`
                     h2 {
