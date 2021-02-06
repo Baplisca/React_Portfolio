@@ -98,20 +98,20 @@ class About extends React.Component{
 
             <h2>Intern</h2>
             <ul><br/>
-                <li>MUIT 2020.8 (3日間) <a href="https://baplisca.hatenablog.com/entry/intern/muit"
+                <li>MUIT　2020.8 (3日間) <a href="https://baplisca.hatenablog.com/entry/intern/muit"
                         rel="noreferrer noopener" target="_blank">インターン感想</a></li>
                 <br/>
-                <li>大和証券 金融商品開発・デリバティブ算定モデル開発・リスクマネジメント業務体験コース 2020.8.24 ~ 2020.8.28 (5日間)</li>
+                <li>大和証券 金融商品開発・デリバティブ算定モデル開発・リスクマネジメント業務体験コース　2020.8.24 ~ 2020.8.28 (5日間)</li>
                 <br/>
-                <li>Amazon Web Services SA 2020.8.31 ~ 2020.9.2 (3日間)　<a
+                <li>Amazon Web Services SA　2020.8.31 ~ 2020.9.2 (3日間) <a
                         rel="noreferrer noopener" href="https://baplisca.hatenablog.com/entry/intern/aws" target="_blank">インターン感想</a></li>
                 <br/>
-                <li>日鉄ソリューションズ (NSSOL)　研究開発 2020.9.7 ~ 2020.9.25 (3週間)
-                    <a href="https://baplisca.hatenablog.com/entry/intern/nssol" rel="noreferrer noopener" target="_blank">インターン感想</a>
+                <li>日鉄ソリューションズ (NSSOL)　研究開発　2020.9.7 ~ 2020.9.25 (3週間) <a href="https://baplisca.hatenablog.com/entry/intern/nssol" rel="noreferrer noopener" target="_blank">インターン感想</a>
                 </li>
                 <br/>
-                <li>楽天　Webアプリケーションエンジニア (3ヶ月)</li>
+                <li>楽天　Webアプリケーションエンジニア　2020.11 ~ 2021.1 (3ヶ月)</li>
                 <br/>
+                <li>アカツキ　2021.2 ~ 2021.3 (2週間予定)</li>
             </ul>
 
             <h2>Awards (Official)</h2>
