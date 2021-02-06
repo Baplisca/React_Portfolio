@@ -112,6 +112,7 @@ class About extends React.Component{
                 <li>楽天　Webアプリケーションエンジニア　2020.11 ~ 2021.1 (3ヶ月)</li>
                 <br/>
                 <li>アカツキ　2021.2 ~ 2021.3 (2週間予定)</li>
+                <br/>
             </ul>
 
             <h2>Awards (Official)</h2>
