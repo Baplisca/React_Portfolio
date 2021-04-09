@@ -8,6 +8,7 @@ class About extends React.Component{
         super(props,context)
         
         let allItems = [
+            {value:"インターン更新", date:"2020.4.10"},
             {value:"Aboutページ更新", date:"2020.11.18"},
             {value:<a href="https://baplisca.herokuapp.com/">React適用に伴うサイト移動</a>, date:"2020.11.1"},
             {value:<a href="https://www.youtube.com/channel/UCUEUc2teEFnYEXG-MtEncrA/playlists"
@@ -50,7 +51,7 @@ class About extends React.Component{
 
                     <ul><br/>
                         <li class="no">横田　光悦 (Koetsu Yokota)</li>
-                        <li class="no">東北大学大学院 情報科学研究科 応用情報科学専攻 修士1年</li>
+                        <li class="no">東北大学大学院 情報科学研究科 応用情報科学専攻 修士2年</li>
                         <li class="no"><a href="https://www.smapip.is.tohoku.ac.jp/" title="田中大関研究室ホームページ"
                             rel="noreferrer noopener" target="_blank">田中・大関研究室</a></li>
                     <br/>
@@ -98,20 +99,17 @@ class About extends React.Component{
 
             <h2>Intern</h2>
             <ul><br/>
-                <li>MUIT　2020.8 (3日間) <a href="https://baplisca.hatenablog.com/entry/intern/muit"
-                        rel="noreferrer noopener" target="_blank">インターン感想</a></li>
+                <li>MUIT　2020.8 (3日間) <a href="https://baplisca.hatenablog.com/entry/intern/muit" rel="noreferrer noopener" target="_blank">インターン感想</a></li>
                 <br/>
                 <li>大和証券 金融商品開発・デリバティブ算定モデル開発・リスクマネジメント業務体験コース　2020.8.24 ~ 2020.8.28 (5日間)</li>
                 <br/>
-                <li>Amazon Web Services SA　2020.8.31 ~ 2020.9.2 (3日間) <a
-                        rel="noreferrer noopener" href="https://baplisca.hatenablog.com/entry/intern/aws" target="_blank">インターン感想</a></li>
+                <li>Amazon Web Services SA　2020.8.31 ~ 2020.9.2 (3日間) <a rel="noreferrer noopener" href="https://baplisca.hatenablog.com/entry/intern/aws" target="_blank">インターン感想</a></li>
                 <br/>
-                <li>日鉄ソリューションズ (NSSOL)　研究開発　2020.9.7 ~ 2020.9.25 (3週間) <a href="https://baplisca.hatenablog.com/entry/intern/nssol" rel="noreferrer noopener" target="_blank">インターン感想</a>
-                </li>
+                <li>日鉄ソリューションズ (NSSOL)　研究開発　2020.9.7 ~ 2020.9.25 (3週間) <a href="https://baplisca.hatenablog.com/entry/intern/nssol" rel="noreferrer noopener" target="_blank">インターン感想</a></li>
                 <br/>
                 <li>楽天　Webアプリケーションエンジニア　2020.11 ~ 2021.1 (3ヶ月)</li>
                 <br/>
-                <li>アカツキ　サーバーサイドエンジニア　2021.2.22 ~ 2021.3.8 (2週間)</li>
+                <li>アカツキ　サーバーサイドエンジニア　2021.2.22 ~ 2021.3.8 (2週間) <a href="https://hackerslab.aktsk.jp/2021/03/31/102547" rel="noreferre noopener" target="_blank">インターン感想</a></li>
                 <br/>
             </ul>
 
