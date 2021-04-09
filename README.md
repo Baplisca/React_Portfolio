@@ -11,3 +11,13 @@ npm start
 ```
 
 You will see this project on your browser.
+
+### Linter/Formatter
+
+・ESLint
+
+・Prettier
+
+### CSS in JS
+
+・Styled Component
