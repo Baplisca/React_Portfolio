@@ -8,6 +8,7 @@ class About extends React.Component{
         super(props,context)
         
         let allItems = [
+            {value:"TOEICスコア更新",date:"2020.6.8"},
             {value:"インターン更新", date:"2020.4.10"},
             {value:"Aboutページ更新", date:"2020.11.18"},
             {value:<a href="https://baplisca.herokuapp.com/">React適用に伴うサイト移動</a>, date:"2020.11.1"},
@@ -52,8 +53,8 @@ class About extends React.Component{
                     <ul><br/>
                         <li class="no">横田　光悦 (Koetsu Yokota)</li>
                         <li class="no">東北大学大学院 情報科学研究科 応用情報科学専攻 修士2年</li>
-                        <li class="no"><a href="https://www.smapip.is.tohoku.ac.jp/" title="田中大関研究室ホームページ"
-                            rel="noreferrer noopener" target="_blank">田中・大関研究室</a></li>
+                        <li class="no"><a href="https://www.smapip.is.tohoku.ac.jp/" title="田中研究室ホームページ"
+                            rel="noreferrer noopener" target="_blank">田中研究室</a></li>
                     <br/>
                     </ul>
 
@@ -85,7 +86,7 @@ class About extends React.Component{
                 <li><a href="https://www.jitec.ipa.go.jp/1_11seido/ap.html" rel="noreferrer noopener" target="_blank">応用情報技術者試験</a> (AP) 合格
                     2017.10</li>
                 <br/>
-                <li>TOEIC 750 2019.3</li>
+                <li>TOEIC 875 (L 470 R 405) 2021.5</li>
                 <br/>
             </ul>
 
@@ -130,7 +131,7 @@ class About extends React.Component{
                 <br/>
                 <li>野球観戦</li>
                 <br/>
-                <li><Link to="/work">ゲーム制作</Link></li>
+                <li>英会話</li>
                 <br/>
             </ul>
 
