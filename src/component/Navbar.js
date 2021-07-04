@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 
 const NavWrapper = styled.div`
 position: relative; /* for IE11 */
-positon: fixed;
+position: sticky;
 top: 0px;
 z-index: 100;
 `;
