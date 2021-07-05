@@ -226,7 +226,7 @@ class About extends React.Component {
             </li>
             <br />
           </ul>
-          <AboutH2Wrapper>Pastime</AboutH2Wrapper>
+          <AboutH2Wrapper>Free time</AboutH2Wrapper>
           <ul>
             <br />
             <li>麻雀</li>
