@@ -6,7 +6,28 @@ const AboutH2Wrapper = styled.h2`
   padding: 0px 0px 5px 0px;
   border-bottom: 2px solid #999999;
 `;
-
+const DisableListDot = styled.li`
+  list-style-type: none;
+`;
+const HrWrapper = styled.hr`
+  border-width: 1px 0px 0px 0px;
+  border-style: solid;
+  border-color: #cccccc;
+  height: 1px;
+`;
+const UpdateHrWrapper = styled.div`
+  margin-right: 50px;
+  color: '#ffffff';
+  border-width: 2.5px 0 0 0;
+`;
+const ScrollWrapper = styled.div`
+  height: 20em;
+  overflow: scroll;
+  background: rgba(54, 54, 54, 0.116);
+  border: none;
+  border-radius: 10px;
+  box-shadow: inset 0 0 2px rgb(12, 12, 12);
+`;
 //Class Component
 class About extends React.Component {
   constructor(props, context) {
@@ -80,9 +101,11 @@ class About extends React.Component {
     return this.state.items.map((_item) => {
       return (
         <React.Fragment>
-          <li className="no">{_item.date}</li>
-          <li className="no">{_item.value}</li>
-          <hr className="updatehr" />
+          <DisableListDot>{_item.date}</DisableListDot>
+          <DisableListDot>{_item.value}</DisableListDot>
+          <UpdateHrWrapper>
+            <HrWrapper />
+          </UpdateHrWrapper>
           <br />
         </React.Fragment>
       );
@@ -96,9 +119,9 @@ class About extends React.Component {
 
           <ul>
             <br />
-            <li class="no">横田　光悦 (Koetsu Yokota)</li>
-            <li class="no">東北大学大学院 情報科学研究科 応用情報科学専攻 修士2年</li>
-            <li class="no">
+            <DisableListDot>横田　光悦 (Koetsu Yokota)</DisableListDot>
+            <DisableListDot>東北大学大学院 情報科学研究科 応用情報科学専攻 修士2年</DisableListDot>
+            <DisableListDot>
               <a
                 href="https://www.smapip.is.tohoku.ac.jp/"
                 title="田中研究室ホームページ"
@@ -106,7 +129,7 @@ class About extends React.Component {
                 target="_blank">
                 田中研究室
               </a>
-            </li>
+            </DisableListDot>
             <br />
           </ul>
 
@@ -236,7 +259,7 @@ class About extends React.Component {
                 競技プログラミング
               </a>
             </li>
-            <li class="no">
+            <DisableListDot>
               <a
                 href="https://atcoder.jp/users/Baplisca"
                 rel="noreferrer noopener"
@@ -247,7 +270,7 @@ class About extends React.Component {
                   alt="競技プログラミング レート"
                 />
               </a>
-            </li>
+            </DisableListDot>
             <br />
             <li>ピアノ (キーボード)</li>
             <br />
@@ -259,42 +282,16 @@ class About extends React.Component {
 
           <AboutH2Wrapper>Updates</AboutH2Wrapper>
           <br />
-          <div className="scroll">
+          <ScrollWrapper>
             <ul>
               <br />
               {this.RenderItems()}
             </ul>
-          </div>
+          </ScrollWrapper>
           <br />
           <br />
           <br />
         </div>
-        <style jsx>
-          {`
-            .updatehr {
-              margin-right: 50px;
-              color: '#ffffff';
-              border-width: 2.5px 0 0 0;
-            }
-            .scroll {
-              height: 20em;
-              overflow: scroll;
-              background: rgba(54, 54, 54, 0.116);
-              border: none;
-              border-radius: 10px;
-              box-shadow: inset 0 0 2px rgb(12, 12, 12);
-            }
-            li.no {
-              list-style-type: none;
-            }
-            hr {
-              border-width: 1px 0px 0px 0px;
-              border-style: solid;
-              border-color: #cccccc;
-              height: 1px;
-            }
-          `}
-        </style>
         <MediaQuery query="(min-width: 800px)">
           <style jsx>
             {`

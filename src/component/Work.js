@@ -30,6 +30,37 @@ const WorkH2Wrapper = styled.h2`
   padding: 0px 0px 5px 0px;
   border-bottom: 2px solid #999999;
 `;
+const UlWrapper = styled.ul`
+  list-style-type: square;
+`;
+const OlWrapper = styled.ol`
+  list-style-type: decimal;
+`;
+const PlWrapper = styled.div`
+  font-size: 14px;
+`;
+const CenterWrapper = styled.div`
+  text-align: center;
+`;
+
+const DisableListDot = styled.li`
+  list-style-type: none;
+`;
+/*説明URL https://design.webclips.jp/youtube-movie-size/ */
+const YoutubeWrapper = styled.div`
+  position: relative;
+  padding-bottom: 56.25%; /*アスペクト比 16:9の場合の縦幅*/
+  height: 0;
+  overflow: hidden;
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+`;
+
 //Class Component
 class Work extends React.Component {
   render() {
@@ -42,37 +73,37 @@ class Work extends React.Component {
           <WorkH2Wrapper>競技プログラミングのために作成したライブラリ </WorkH2Wrapper>
           <p>競プロで頻繁に用いる処理をライブラリにしたものです。言語はC++です。</p>
           <details>
-            <summary className="bold">ライブラリ一覧</summary>
-            <ol>
+            <summary>ライブラリ一覧</summary>
+            <OlWrapper>
               <li>
                 グラフ・木
-                <ul>
+                <UlWrapper>
                   <li>幅優先探索 (BFS)</li>
-                  <div className="pl">辺彩色</div>
+                  <PlWrapper>辺彩色</PlWrapper>
 
                   <li>深さ優先探索 (DFS)</li>
-                  <div className="pl">メモ化DFS</div>
-                  <div className="pl">2部グラフ判定</div>
+                  <PlWrapper>メモ化DFS</PlWrapper>
+                  <PlWrapper>2部グラフ判定</PlWrapper>
 
                   <li>ワーシャルフロイド法</li>
                   <li>ダイクストラ法</li>
                   <li>ベルマンフォード法</li>
-                </ul>
+                </UlWrapper>
               </li>
               <li>
                 動的計画法 (DP)
-                <ul>
+                <UlWrapper>
                   <li>1次元DP</li>
-                  <div className="pl">LIS (最長増加部分文字列)</div>
+                  <PlWrapper>LIS (最長増加部分文字列)</PlWrapper>
 
                   <li>2次元DP</li>
                   <li>bitDP</li>
                   <li>区間DP</li>
-                </ul>
+                </UlWrapper>
               </li>
               <li>
                 数学 (整数論)
-                <ul>
+                <UlWrapper>
                   <li>エラトステネスのふるい</li>
                   <li>二項係数 (light_ver)</li>
                   <li>二項係数 (mod_ver)</li>
@@ -81,51 +112,51 @@ class Work extends React.Component {
                   <li>約数列挙</li>
                   <li>包除原理</li>
                   <li>逆元を使った解答例</li>
-                </ul>
+                </UlWrapper>
               </li>
               <li>
                 その他データ構造
-                <ul>
+                <UlWrapper>
                   <li>累積和</li>
                   <li>2次元累積和</li>
                   <li>BIT</li>
-                  <div className="pl">区間加算BIT</div>
-                  <div className="pl">RSQ</div>
+                  <PlWrapper>区間加算BIT</PlWrapper>
+                  <PlWrapper>RSQ</PlWrapper>
 
                   <li>セグメント木</li>
-                  <div className="pl">1点更新セグメント木</div>
-                  <div className="pl">RMQ</div>
-                  <div className="pl">RSQ</div>
-                  <div className="pl">遅延評価セグメント木</div>
+                  <PlWrapper>1点更新セグメント木</PlWrapper>
+                  <PlWrapper>RMQ</PlWrapper>
+                  <PlWrapper>RSQ</PlWrapper>
+                  <PlWrapper>遅延評価セグメント木</PlWrapper>
 
                   <li>Union-Find</li>
-                  <div className="pl">重み付きUnion-Find</div>
+                  <PlWrapper>重み付きUnion-Find</PlWrapper>
 
                   <li>ダブリング</li>
                   <li>双対問題</li>
-                </ul>
+                </UlWrapper>
               </li>
               <li>
                 その他
-                <ul>
+                <UlWrapper>
                   <li>順列全探索</li>
                   <li>bit全探索</li>
                   <li>しゃくとり法</li>
                   <li>二分探索</li>
                   <li>いもす法</li>
                   <li>座標圧縮</li>
-                </ul>
+                </UlWrapper>
               </li>
               <li>
                 作れそうなもの
-                <ul>
+                <UlWrapper>
                   <li>最小全域木 (Prim_ver)</li>
                   <li>クリーク全列挙</li>
                   <li>最大クリーク</li>
                   <li>トポロジカルソート</li>
-                </ul>
+                </UlWrapper>
               </li>
-            </ol>
+            </OlWrapper>
           </details>
           <p>ライブラリは整備したのち、GitHubに公開します</p>
           <p>
@@ -139,17 +170,17 @@ class Work extends React.Component {
           <WorkH2Wrapper>海洋生物たちの復讐</WorkH2Wrapper>
           <p>大学1年次に制作した初めてのゲーム作品です</p>
           <p>縦スクロールシューティングゲームで, C言語とDXライブラリを用いました</p>
-          <div className="center">
+          <CenterWrapper>
             <img src={game1_1} alt="海洋生物たちの復讐 画像1" width="320px" height="200px" />
             <img src={game1_2} alt="海洋生物たちの復讐 画像2" width="320px" height="200px" />
             <img src={game1_3} alt="海洋生物たちの復讐 画像3" width="320px" height="200px" />
-          </div>
+          </CenterWrapper>
           <br />
           <details>
-            <summary className="bold">動画Ver</summary>
-            <div className="center">
+            <summary>動画Ver</summary>
+            <CenterWrapper>
               <p>
-                <div className="youtube">
+                <YoutubeWrapper>
                   <iframe
                     width="560"
                     height="315"
@@ -158,10 +189,10 @@ class Work extends React.Component {
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen
                     title="Game1_1"></iframe>
-                </div>
+                </YoutubeWrapper>
               </p>
               <p>
-                <div className="youtube">
+                <YoutubeWrapper>
                   <iframe
                     width="560"
                     height="315"
@@ -170,10 +201,10 @@ class Work extends React.Component {
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen
                     title="Game1_2"></iframe>
-                </div>
+                </YoutubeWrapper>
               </p>
               <p>
-                <div className="youtube">
+                <YoutubeWrapper>
                   <iframe
                     width="560"
                     height="315"
@@ -182,9 +213,9 @@ class Work extends React.Component {
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen
                     title="Game1_3"></iframe>
-                </div>
+                </YoutubeWrapper>
               </p>
-            </div>
+            </CenterWrapper>
           </details>
           <br />
           <br />
@@ -211,21 +242,21 @@ class Work extends React.Component {
             </a>
             に登壇しました
           </p>
-          <div className="center">
+          <CenterWrapper>
             <img src={game3_1} alt="ボイストラベラー 画像1" width="320px" height="160px" />
             <img src={game3_2} alt="ボイストラベラー 画像2" width="320px" height="160px" />
             <img src={game3_3} alt="ボイストラベラー 画像3" width="320px" height="160px" />
             <img src={game3_4} alt="ボイストラベラー 画像4" width="320px" height="160px" />
-          </div>
+          </CenterWrapper>
           <br />
           <details>
-            <summary className="bold">動画Ver</summary>
+            <summary>動画Ver</summary>
 
-            <div className="center">
+            <CenterWrapper>
               <p>円滑な撮影のため、周波数で上下操作は十字キー操作に置き換えています</p>
               <p>各動画は約1分です</p>
               <p>
-                <div className="youtube">
+                <YoutubeWrapper>
                   <iframe
                     width="560"
                     height="315"
@@ -234,10 +265,10 @@ class Work extends React.Component {
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen
                     title="Game3_Title"></iframe>
-                </div>
+                </YoutubeWrapper>
               </p>
               <p>
-                <div className="youtube">
+                <YoutubeWrapper>
                   <iframe
                     width="560"
                     height="315"
@@ -246,10 +277,10 @@ class Work extends React.Component {
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen
                     title="Game3_1"></iframe>
-                </div>
+                </YoutubeWrapper>
               </p>
               <p>
-                <div className="youtube">
+                <YoutubeWrapper>
                   <iframe
                     width="560"
                     height="315"
@@ -258,10 +289,10 @@ class Work extends React.Component {
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen
                     title="Game3_2"></iframe>
-                </div>
+                </YoutubeWrapper>
               </p>
               <p>
-                <div className="youtube">
+                <YoutubeWrapper>
                   <iframe
                     width="560"
                     height="315"
@@ -270,10 +301,10 @@ class Work extends React.Component {
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen
                     title="Game3_3"></iframe>
-                </div>
+                </YoutubeWrapper>
               </p>
               <p>
-                <div className="youtube">
+                <YoutubeWrapper>
                   <iframe
                     width="560"
                     height="315"
@@ -282,9 +313,9 @@ class Work extends React.Component {
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen
                     title="Game3_4"></iframe>
-                </div>
+                </YoutubeWrapper>
               </p>
-            </div>
+            </CenterWrapper>
           </details>
           <br />
           <br />
@@ -292,19 +323,19 @@ class Work extends React.Component {
           <p>3Dゲームを作りたい and Blenderの勉強目的で制作した3Dアクションゲーム</p>
           <p>規模がデカすぎて, 制作は中断しています</p>
           <p>言語はC#で, ゲームエンジンはUnityを使用しています</p>
-          <div className="center">
+          <CenterWrapper>
             <img src={game2_1} alt="タダノアクション 画像1" width="320px" height="160px" />
             <img src={game2_2} alt="タダノアクション 画像2" width="320px" height="160px" />
             <img src={game2_3} alt="タダノアクション 画像3" width="320px" height="160px" />
             <img src={game2_4} alt="タダノアクション 画像4" width="320px" height="160px" />
-          </div>
+          </CenterWrapper>
           <br />
           <details>
-            <summary className="bold">動画Ver</summary>
+            <summary>動画Ver</summary>
 
-            <div className="center">
+            <CenterWrapper>
               <p>
-                <div className="youtube">
+                <YoutubeWrapper>
                   <iframe
                     width="560"
                     height="315"
@@ -313,10 +344,10 @@ class Work extends React.Component {
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen
                     title="Game2_1"></iframe>
-                </div>
+                </YoutubeWrapper>
               </p>
               <p>
-                <div className="youtube">
+                <YoutubeWrapper>
                   <iframe
                     width="560"
                     height="315"
@@ -325,10 +356,10 @@ class Work extends React.Component {
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen
                     title="Game2_2"></iframe>
-                </div>
+                </YoutubeWrapper>
               </p>
               <p>
-                <div className="youtube">
+                <YoutubeWrapper>
                   <iframe
                     width="560"
                     height="315"
@@ -337,10 +368,10 @@ class Work extends React.Component {
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen
                     title="Game2_3"></iframe>
-                </div>
+                </YoutubeWrapper>
               </p>
               <p>
-                <div className="youtube">
+                <YoutubeWrapper>
                   <iframe
                     width="560"
                     height="315"
@@ -349,10 +380,10 @@ class Work extends React.Component {
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen
                     title="Game2_4"></iframe>
-                </div>
+                </YoutubeWrapper>
               </p>
               <p>
-                <div className="youtube">
+                <YoutubeWrapper>
                   <iframe
                     width="560"
                     height="315"
@@ -361,9 +392,9 @@ class Work extends React.Component {
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen
                     title="Game2_5"></iframe>
-                </div>
+                </YoutubeWrapper>
               </p>
-            </div>
+            </CenterWrapper>
           </details>
           <br />
           <br />
@@ -382,23 +413,23 @@ class Work extends React.Component {
             </a>
             にしたがって, 最適化を行った図です.
           </p>
-          <div className="center">
+          <CenterWrapper>
             <Image
               url={heuristic}
               alt="電力最適化シミュレーション結果"
               width="800px"
               height="800px"
             />
-          </div>
+          </CenterWrapper>
           <p>
             量子アニーリングを用いて, 最適化すると, 下の図のようになります.
             <br />
-            <div className="center">(1枚目最適化前, 2枚目最適化後)</div>
+            <CenterWrapper>(1枚目最適化前, 2枚目最適化後)</CenterWrapper>
           </p>
-          <div className="center">
+          <CenterWrapper>
             <img src={pre_annealing} alt="電力最適化前" width="320px" height="320px" />
             <img src={aft_annealing} alt="電力最適化後" width="320px" height="320px" />
-          </div>
+          </CenterWrapper>
           <br />
           <p>言語はPythonで, グラフィックライブラリはNetworkXを用いました.</p>
           <WorkH2Wrapper>タピタピ</WorkH2Wrapper>
@@ -409,52 +440,15 @@ class Work extends React.Component {
             Studioを使用しています
           </p>
           <p>下の図はAndroidでの表示になります</p>
-          <div className="center">
+          <CenterWrapper>
             <img src={tapitapi1} alt="タピタピ 画像1" width="211px" height="498px" />
             <img src={tapitapi2} alt="タピタピ 画像2" width="211px" height="498px" />
             <img src={tapitapi3} alt="タピタピ 画像3" width="211px" height="498px" />
-          </div>
+          </CenterWrapper>
           <br />
           <br />
           <br />
         </div>
-
-        <style jsx>
-          {`
-            ul {
-              list-style-type: square;
-            }
-            ol {
-              list-style-type: decimal;
-            }
-            li.no {
-              list-style-type: none;
-            }
-            .pl {
-              font-size: 14px;
-            }
-            .center {
-              text-align: center;
-            }
-            .bold {
-              font-weight: bold;
-            }
-            /*説明URL https://design.webclips.jp/youtube-movie-size/ */
-            .youtube {
-              position: relative;
-              padding-bottom: 56.25%; /*アスペクト比 16:9の場合の縦幅*/
-              height: 0;
-              overflow: hidden;
-            }
-            .youtube iframe {
-              position: absolute;
-              top: 0;
-              left: 0;
-              width: 100%;
-              height: 100%;
-            }
-          `}
-        </style>
         <MediaQuery query="(min-width: 800px)">
           <style jsx>
             {`
