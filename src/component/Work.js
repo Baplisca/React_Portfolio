@@ -1,5 +1,5 @@
 import React from 'react';
-import MediaQuery from 'react-responsive';
+
 import styled from 'styled-components';
 import Image from '../component/Image';
 
@@ -43,8 +43,30 @@ const CenterWrapper = styled.div`
   text-align: center;
 `;
 
-const DisableListDot = styled.li`
-  list-style-type: none;
+const SmartImageDiv = styled.img`
+  @media (max-width: 800px) {
+    max-width: 100%;
+    height: auto;
+    width/***/
+      : auto;
+  }
+`;
+const ContentWrapper = styled.div`
+  margin: 0px auto 0px auto;
+  padding: 30px 0px 0px 0px;
+  width: 800px;
+  line-height: 150%;
+  color: #333333;
+  font-size: 16px;
+
+  @media (max-width: 800px) {
+    margin: 0px auto 0px auto;
+    padding: 30px 0px 0px 0px;
+    width: 95%;
+    line-height: 150%;
+    color: #333333;
+    font-size: 14px;
+  }
 `;
 /*説明URL https://design.webclips.jp/youtube-movie-size/ */
 const YoutubeWrapper = styled.div`
@@ -66,7 +88,7 @@ class Work extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <div id="contents">
+        <ContentWrapper>
           <WorkH2Wrapper>My Works</WorkH2Wrapper>
           <br />
           <br />
@@ -171,9 +193,24 @@ class Work extends React.Component {
           <p>大学1年次に制作した初めてのゲーム作品です</p>
           <p>縦スクロールシューティングゲームで, C言語とDXライブラリを用いました</p>
           <CenterWrapper>
-            <img src={game1_1} alt="海洋生物たちの復讐 画像1" width="320px" height="200px" />
-            <img src={game1_2} alt="海洋生物たちの復讐 画像2" width="320px" height="200px" />
-            <img src={game1_3} alt="海洋生物たちの復讐 画像3" width="320px" height="200px" />
+            <SmartImageDiv
+              src={game1_1}
+              alt="海洋生物たちの復讐 画像1"
+              width="320px"
+              height="200px"
+            />
+            <SmartImageDiv
+              src={game1_2}
+              alt="海洋生物たちの復讐 画像2"
+              width="320px"
+              height="200px"
+            />
+            <SmartImageDiv
+              src={game1_3}
+              alt="海洋生物たちの復讐 画像3"
+              width="320px"
+              height="200px"
+            />
           </CenterWrapper>
           <br />
           <details>
@@ -243,10 +280,30 @@ class Work extends React.Component {
             に登壇しました
           </p>
           <CenterWrapper>
-            <img src={game3_1} alt="ボイストラベラー 画像1" width="320px" height="160px" />
-            <img src={game3_2} alt="ボイストラベラー 画像2" width="320px" height="160px" />
-            <img src={game3_3} alt="ボイストラベラー 画像3" width="320px" height="160px" />
-            <img src={game3_4} alt="ボイストラベラー 画像4" width="320px" height="160px" />
+            <SmartImageDiv
+              src={game3_1}
+              alt="ボイストラベラー 画像1"
+              width="320px"
+              height="160px"
+            />
+            <SmartImageDiv
+              src={game3_2}
+              alt="ボイストラベラー 画像2"
+              width="320px"
+              height="160px"
+            />
+            <SmartImageDiv
+              src={game3_3}
+              alt="ボイストラベラー 画像3"
+              width="320px"
+              height="160px"
+            />
+            <SmartImageDiv
+              src={game3_4}
+              alt="ボイストラベラー 画像4"
+              width="320px"
+              height="160px"
+            />
           </CenterWrapper>
           <br />
           <details>
@@ -324,10 +381,30 @@ class Work extends React.Component {
           <p>規模がデカすぎて, 制作は中断しています</p>
           <p>言語はC#で, ゲームエンジンはUnityを使用しています</p>
           <CenterWrapper>
-            <img src={game2_1} alt="タダノアクション 画像1" width="320px" height="160px" />
-            <img src={game2_2} alt="タダノアクション 画像2" width="320px" height="160px" />
-            <img src={game2_3} alt="タダノアクション 画像3" width="320px" height="160px" />
-            <img src={game2_4} alt="タダノアクション 画像4" width="320px" height="160px" />
+            <SmartImageDiv
+              src={game2_1}
+              alt="タダノアクション 画像1"
+              width="320px"
+              height="160px"
+            />
+            <SmartImageDiv
+              src={game2_2}
+              alt="タダノアクション 画像2"
+              width="320px"
+              height="160px"
+            />
+            <SmartImageDiv
+              src={game2_3}
+              alt="タダノアクション 画像3"
+              width="320px"
+              height="160px"
+            />
+            <SmartImageDiv
+              src={game2_4}
+              alt="タダノアクション 画像4"
+              width="320px"
+              height="160px"
+            />
           </CenterWrapper>
           <br />
           <details>
@@ -427,8 +504,8 @@ class Work extends React.Component {
             <CenterWrapper>(1枚目最適化前, 2枚目最適化後)</CenterWrapper>
           </p>
           <CenterWrapper>
-            <img src={pre_annealing} alt="電力最適化前" width="320px" height="320px" />
-            <img src={aft_annealing} alt="電力最適化後" width="320px" height="320px" />
+            <SmartImageDiv src={pre_annealing} alt="電力最適化前" width="320px" height="320px" />
+            <SmartImageDiv src={aft_annealing} alt="電力最適化後" width="320px" height="320px" />
           </CenterWrapper>
           <br />
           <p>言語はPythonで, グラフィックライブラリはNetworkXを用いました.</p>
@@ -441,49 +518,14 @@ class Work extends React.Component {
           </p>
           <p>下の図はAndroidでの表示になります</p>
           <CenterWrapper>
-            <img src={tapitapi1} alt="タピタピ 画像1" width="211px" height="498px" />
-            <img src={tapitapi2} alt="タピタピ 画像2" width="211px" height="498px" />
-            <img src={tapitapi3} alt="タピタピ 画像3" width="211px" height="498px" />
+            <SmartImageDiv src={tapitapi1} alt="タピタピ 画像1" width="211px" height="498px" />
+            <SmartImageDiv src={tapitapi2} alt="タピタピ 画像2" width="211px" height="498px" />
+            <SmartImageDiv src={tapitapi3} alt="タピタピ 画像3" width="211px" height="498px" />
           </CenterWrapper>
           <br />
           <br />
           <br />
-        </div>
-        <MediaQuery query="(min-width: 800px)">
-          <style jsx>
-            {`
-              #contents {
-                margin: 0px auto 0px auto;
-                padding: 30px 0px 0px 0px;
-                width: 800px;
-                line-height: 150%;
-                color: #333333;
-                font-size: 16px;
-              }
-            `}
-          </style>
-        </MediaQuery>
-        <MediaQuery query="(max-width: 800px)">
-          <style jsx>
-            {`
-              #contents {
-                margin: 0px auto 0px auto;
-                padding: 30px 0px 0px 0px;
-                width: 95%;
-                line-height: 150%;
-                color: #333333;
-                font-size: 14px;
-              }
-              /*　画像をスマホサイズに縮小してくれる */
-              img {
-                max-width: 100%;
-                height: auto;
-                width/***/
-                    : auto;
-              }
-            `}
-          </style>
-        </MediaQuery>
+        </ContentWrapper>
       </React.Fragment>
     );
   }

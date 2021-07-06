@@ -1,5 +1,4 @@
 import React from 'react';
-import MediaQuery from 'react-responsive';
 import styled from 'styled-components';
 
 const AboutH2Wrapper = styled.h2`
@@ -27,6 +26,23 @@ const ScrollWrapper = styled.div`
   border: none;
   border-radius: 10px;
   box-shadow: inset 0 0 2px rgb(12, 12, 12);
+`;
+const ContentWrapper = styled.div`
+  margin: 0px auto 0px auto;
+  padding: 30px 0px 0px 0px;
+  width: 800px;
+  line-height: 150%;
+  color: #333333;
+  font-size: 16px;
+
+  @media (max-width: 800px) {
+    margin: 0px auto 0px auto;
+    padding: 30px 0px 0px 0px;
+    width: 95%;
+    line-height: 150%;
+    color: #333333;
+    font-size: 14px;
+  }
 `;
 //Class Component
 class About extends React.Component {
@@ -114,7 +130,7 @@ class About extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <div id="contents">
+        <ContentWrapper>
           <AboutH2Wrapper>Self-Introduction</AboutH2Wrapper>
 
           <ul>
@@ -291,35 +307,7 @@ class About extends React.Component {
           <br />
           <br />
           <br />
-        </div>
-        <MediaQuery query="(min-width: 800px)">
-          <style jsx>
-            {`
-              #contents {
-                margin: 0px auto 0px auto;
-                padding: 30px 0px 0px 0px;
-                width: 800px;
-                line-height: 150%;
-                color: #333333;
-                font-size: 16px;
-              }
-            `}
-          </style>
-        </MediaQuery>
-        <MediaQuery query="(max-width: 800px)">
-          <style jsx>
-            {`
-              #contents {
-                margin: 0px auto 0px auto;
-                padding: 30px 0px 0px 0px;
-                width: 95%;
-                line-height: 150%;
-                color: #333333;
-                font-size: 14px;
-              }
-            `}
-          </style>
-        </MediaQuery>
+        </ContentWrapper>
       </React.Fragment>
     );
   }

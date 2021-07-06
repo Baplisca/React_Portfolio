@@ -2,6 +2,7 @@ import React from 'react';
 import Footer from './Footer.js';
 import styled from 'styled-components';
 
+//max-width 800% means if width is no more than 800px then true;
 const ContentWrapper = styled.div`
   margin: 0px auto 0px auto;
   padding: 30px 0px 0px 0px;
