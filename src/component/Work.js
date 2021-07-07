@@ -42,13 +42,11 @@ const PlWrapper = styled.div`
 const CenterWrapper = styled.div`
   text-align: center;
 `;
-
 const SmartImageDiv = styled.img`
   @media (max-width: 800px) {
     max-width: 100%;
     height: auto;
-    width/***/
-      : auto;
+    width: auto;
   }
 `;
 const ContentWrapper = styled.div`
@@ -193,24 +191,9 @@ class Work extends React.Component {
           <p>大学1年次に制作した初めてのゲーム作品です</p>
           <p>縦スクロールシューティングゲームで, C言語とDXライブラリを用いました</p>
           <CenterWrapper>
-            <SmartImageDiv
-              src={game1_1}
-              alt="海洋生物たちの復讐 画像1"
-              width="320px"
-              height="200px"
-            />
-            <SmartImageDiv
-              src={game1_2}
-              alt="海洋生物たちの復讐 画像2"
-              width="320px"
-              height="200px"
-            />
-            <SmartImageDiv
-              src={game1_3}
-              alt="海洋生物たちの復讐 画像3"
-              width="320px"
-              height="200px"
-            />
+            <Image url={game1_1} alt="海洋生物たちの復讐 画像1" width="320px" height="200px" />
+            <Image url={game1_2} alt="海洋生物たちの復讐 画像2" width="320px" height="200px" />
+            <Image url={game1_3} alt="海洋生物たちの復讐 画像3" width="320px" height="200px" />
           </CenterWrapper>
           <br />
           <details>
@@ -494,8 +477,8 @@ class Work extends React.Component {
             <Image
               url={heuristic}
               alt="電力最適化シミュレーション結果"
-              width="800px"
-              height="800px"
+              width="400px"
+              height="400px"
             />
           </CenterWrapper>
           <p>

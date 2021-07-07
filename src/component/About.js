@@ -15,7 +15,6 @@ const HrWrapper = styled.hr`
   height: 1px;
 `;
 const UpdateHrWrapper = styled.div`
-  margin-right: 50px;
   color: '#ffffff';
   border-width: 2.5px 0 0 0;
 `;
@@ -45,6 +44,9 @@ const ScrollOuterWrapper = styled.div`
   padding: 15px;
   border-radius: 10px;
   border: none;
+`;
+const UpdateItemWrapper = styled.div`
+  margin-right: 50px;
 `;
 const ContentWrapper = styled.div`
   margin: 0px auto 0px auto;
@@ -136,11 +138,13 @@ class About extends React.Component {
     return this.state.items.map((_item) => {
       return (
         <React.Fragment>
-          <DisableListDot>{_item.date}</DisableListDot>
-          <DisableListDot>{_item.value}</DisableListDot>
-          <UpdateHrWrapper>
-            <HrWrapper />
-          </UpdateHrWrapper>
+          <UpdateItemWrapper>
+            <DisableListDot>{_item.date}</DisableListDot>
+            <DisableListDot>{_item.value}</DisableListDot>
+            <UpdateHrWrapper>
+              <HrWrapper />
+            </UpdateHrWrapper>
+          </UpdateItemWrapper>
           <br />
         </React.Fragment>
       );
