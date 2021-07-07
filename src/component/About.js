@@ -22,10 +22,29 @@ const UpdateHrWrapper = styled.div`
 const ScrollWrapper = styled.div`
   height: 20em;
   overflow: scroll;
+  overflow-x: hidden;
+  &::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  &::-webkit-scrollbar-track {
+    background: #f5f5f5;
+    border: none;
+    border-radius: 10px;
+    box-shadow: inset 0 0 2px #777;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 10px;
+    box-shadow: none;
+  }
+`;
+const ScrollOuterWrapper = styled.div`
   background: rgba(54, 54, 54, 0.116);
-  border: none;
-  border-radius: 10px;
   box-shadow: inset 0 0 2px rgb(12, 12, 12);
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
 `;
 const ContentWrapper = styled.div`
   margin: 0px auto 0px auto;
@@ -298,12 +317,14 @@ class About extends React.Component {
 
           <AboutH2Wrapper>Updates</AboutH2Wrapper>
           <br />
-          <ScrollWrapper>
-            <ul>
-              <br />
-              {this.RenderItems()}
-            </ul>
-          </ScrollWrapper>
+          <ScrollOuterWrapper>
+            <ScrollWrapper>
+              <ul>
+                <br />
+                {this.RenderItems()}
+              </ul>
+            </ScrollWrapper>
+          </ScrollOuterWrapper>
           <br />
           <br />
           <br />
