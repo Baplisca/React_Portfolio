@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const NavWrapper = styled.div`
   position: relative; /* for IE11 */
@@ -43,13 +43,16 @@ const NavUl = styled.ul`
     border: none;
     border-radius: 10px;
   }
-  li:active {
+`;
+
+/* https://stackoverflow.com/questions/34418254/how-do-i-add-an-active-class-to-a-link-from-react-router */
+const MyNavLink = styled(NavLink)`
+  &.${(props) => props.activeClassName} {
     background-color: #555;
     border: none;
     border-radius: 10px;
   }
 `;
-
 class Navbar extends Component {
   render() {
     return (
@@ -59,16 +62,24 @@ class Navbar extends Component {
             <NavInner>
               <NavUl>
                 <li>
-                  <Link to="/">Home</Link>
+                  <MyNavLink activeClassName="active" exact to="/">
+                    Home
+                  </MyNavLink>
                 </li>
                 <li>
-                  <Link to="/about">About</Link>
+                  <MyNavLink activeClassName="active" to="/about">
+                    About
+                  </MyNavLink>
                 </li>
                 <li>
-                  <Link to="/work">Work</Link>
+                  <MyNavLink activeClassName="active" to="/work">
+                    Work
+                  </MyNavLink>
                 </li>
                 <li>
-                  <Link to="/contact">Contact</Link>
+                  <MyNavLink activeClassName="active" to="/contact">
+                    Contact
+                  </MyNavLink>
                 </li>
               </NavUl>
             </NavInner>
