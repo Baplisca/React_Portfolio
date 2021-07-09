@@ -45,7 +45,7 @@ const NavUl = styled.ul`
   }
 `;
 
-/* https://stackoverflow.com/questions/34418254/how-do-i-add-an-active-class-to-a-link-from-react-router */
+/* https://stackoverflow.com/questions/50208306/use-active-state-from-react-router-in-styled-components */
 const MyNavLink = styled(NavLink)`
   &.${(props) => props.activeClassName} {
     background-color: #555;

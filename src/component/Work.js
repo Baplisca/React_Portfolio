@@ -42,11 +42,10 @@ const PlWrapper = styled.div`
 const CenterWrapper = styled.div`
   text-align: center;
 `;
-const SmartImageDiv = styled.img`
+const FlexWrapper = styled.div`
+  display: flex;
   @media (max-width: 800px) {
-    max-width: 100%;
-    height: auto;
-    width: auto;
+    display: block;
   }
 `;
 const ContentWrapper = styled.div`
@@ -191,10 +190,13 @@ class Work extends React.Component {
           <p>大学1年次に制作した初めてのゲーム作品です</p>
           <p>縦スクロールシューティングゲームで, C言語とDXライブラリを用いました</p>
           <CenterWrapper>
-            <Image url={game1_1} alt="海洋生物たちの復讐 画像1" width="320px" height="200px" />
-            <Image url={game1_2} alt="海洋生物たちの復讐 画像2" width="320px" height="200px" />
-            <Image url={game1_3} alt="海洋生物たちの復讐 画像3" width="320px" height="200px" />
+            <FlexWrapper>
+              <Image url={game1_1} alt="海洋生物たちの復讐 画像1" width="33%" height="33%" />
+              <Image url={game1_2} alt="海洋生物たちの復讐 画像2" width="33%" height="33%" />
+              <Image url={game1_3} alt="海洋生物たちの復讐 画像3" width="33%" height="33%" />
+            </FlexWrapper>
           </CenterWrapper>
+          <div style={{ clear: 'left' }} />
           <br />
           <details>
             <summary>動画Ver</summary>
@@ -263,31 +265,14 @@ class Work extends React.Component {
             に登壇しました
           </p>
           <CenterWrapper>
-            <SmartImageDiv
-              src={game3_1}
-              alt="ボイストラベラー 画像1"
-              width="320px"
-              height="160px"
-            />
-            <SmartImageDiv
-              src={game3_2}
-              alt="ボイストラベラー 画像2"
-              width="320px"
-              height="160px"
-            />
-            <SmartImageDiv
-              src={game3_3}
-              alt="ボイストラベラー 画像3"
-              width="320px"
-              height="160px"
-            />
-            <SmartImageDiv
-              src={game3_4}
-              alt="ボイストラベラー 画像4"
-              width="320px"
-              height="160px"
-            />
+            <FlexWrapper>
+              <Image url={game3_1} alt="ボイストラベラー 画像1" width="50%" height="50%" />
+              <Image url={game3_2} alt="ボイストラベラー 画像2" width="50%" height="50%" />
+              <Image url={game3_3} alt="ボイストラベラー 画像3" width="50%" height="50%" />
+              <Image url={game3_4} alt="ボイストラベラー 画像4" width="50%" height="50%" />
+            </FlexWrapper>
           </CenterWrapper>
+          <div style={{ clear: 'left' }} />
           <br />
           <details>
             <summary>動画Ver</summary>
@@ -364,31 +349,14 @@ class Work extends React.Component {
           <p>規模がデカすぎて, 制作は中断しています</p>
           <p>言語はC#で, ゲームエンジンはUnityを使用しています</p>
           <CenterWrapper>
-            <SmartImageDiv
-              src={game2_1}
-              alt="タダノアクション 画像1"
-              width="320px"
-              height="160px"
-            />
-            <SmartImageDiv
-              src={game2_2}
-              alt="タダノアクション 画像2"
-              width="320px"
-              height="160px"
-            />
-            <SmartImageDiv
-              src={game2_3}
-              alt="タダノアクション 画像3"
-              width="320px"
-              height="160px"
-            />
-            <SmartImageDiv
-              src={game2_4}
-              alt="タダノアクション 画像4"
-              width="320px"
-              height="160px"
-            />
+            <FlexWrapper>
+              <Image url={game2_1} alt="タダノアクション 画像1" width="50%" height="50%" />
+              <Image url={game2_2} alt="タダノアクション 画像2" width="50%" height="50%" />
+              <Image url={game2_3} alt="タダノアクション 画像3" width="50%" height="50%" />
+              <Image url={game2_4} alt="タダノアクション 画像4" width="50%" height="50%" />
+            </FlexWrapper>
           </CenterWrapper>
+          <div style={{ clear: 'left' }} />
           <br />
           <details>
             <summary>動画Ver</summary>
@@ -474,22 +442,28 @@ class Work extends React.Component {
             にしたがって, 最適化を行った図です.
           </p>
           <CenterWrapper>
-            <Image
-              url={heuristic}
-              alt="電力最適化シミュレーション結果"
-              width="400px"
-              height="400px"
-            />
+            <FlexWrapper>
+              <Image
+                url={heuristic}
+                alt="電力最適化シミュレーション結果"
+                width="80%"
+                height="80%"
+              />
+            </FlexWrapper>
           </CenterWrapper>
+          <div style={{ clear: 'left' }} />
           <p>
             量子アニーリングを用いて, 最適化すると, 下の図のようになります.
             <br />
             <CenterWrapper>(1枚目最適化前, 2枚目最適化後)</CenterWrapper>
           </p>
           <CenterWrapper>
-            <SmartImageDiv src={pre_annealing} alt="電力最適化前" width="320px" height="320px" />
-            <SmartImageDiv src={aft_annealing} alt="電力最適化後" width="320px" height="320px" />
+            <FlexWrapper>
+              <Image url={pre_annealing} alt="電力最適化前" width="50%" height="50%" />
+              <Image url={aft_annealing} alt="電力最適化後" width="50%" height="50%" />
+            </FlexWrapper>
           </CenterWrapper>
+          <div style={{ clear: 'left' }} />
           <br />
           <p>言語はPythonで, グラフィックライブラリはNetworkXを用いました.</p>
           <WorkH2Wrapper>タピタピ</WorkH2Wrapper>
@@ -501,10 +475,13 @@ class Work extends React.Component {
           </p>
           <p>下の図はAndroidでの表示になります</p>
           <CenterWrapper>
-            <SmartImageDiv src={tapitapi1} alt="タピタピ 画像1" width="211px" height="498px" />
-            <SmartImageDiv src={tapitapi2} alt="タピタピ 画像2" width="211px" height="498px" />
-            <SmartImageDiv src={tapitapi3} alt="タピタピ 画像3" width="211px" height="498px" />
+            <FlexWrapper>
+              <Image url={tapitapi1} alt="タピタピ 画像1" width="33%" height="33%" />
+              <Image url={tapitapi2} alt="タピタピ 画像2" width="33%" height="33%" />
+              <Image url={tapitapi3} alt="タピタピ 画像3" width="33%" height="33%" />
+            </FlexWrapper>
           </CenterWrapper>
+          <div style={{ clear: 'left' }} />
           <br />
           <br />
           <br />
