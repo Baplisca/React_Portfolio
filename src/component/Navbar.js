@@ -63,11 +63,6 @@ class Navbar extends Component {
               <NavUl>
                 <li>
                   <MyNavLink activeClassName="active" exact to="/">
-                    Home
-                  </MyNavLink>
-                </li>
-                <li>
-                  <MyNavLink activeClassName="active" to="/about">
                     About
                   </MyNavLink>
                 </li>
