@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
+import './i18n';
+import { withTranslation } from 'react-i18next';
+
 const NavWrapper = styled.div`
   position: relative; /* for IE11 */
   position: sticky;
@@ -54,7 +57,17 @@ const MyNavLink = styled(NavLink)`
   }
 `;
 class Navbar extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isEng: false,
+    };
+  }
   render() {
+    const { t, i18n } = this.props;
+    const changeLanguage = (lng) => {
+      i18n.changeLanguage(lng);
+    };
     return (
       <React.Fragment>
         <NavWrapper>
@@ -63,7 +76,7 @@ class Navbar extends Component {
               <NavUl>
                 <li>
                   <MyNavLink activeClassName="active" exact to="/">
-                    About
+                    {t('About')}
                   </MyNavLink>
                 </li>
                 <li>
@@ -76,6 +89,8 @@ class Navbar extends Component {
                     Contact
                   </MyNavLink>
                 </li>
+                <li onClick={() => changeLanguage('ja')}>日</li>
+                <li onClick={() => changeLanguage('en')}>A</li>
               </NavUl>
             </NavInner>
           </H2Wrapper>
@@ -85,4 +100,4 @@ class Navbar extends Component {
   }
 }
 
-export default Navbar;
+export default withTranslation()(Navbar);

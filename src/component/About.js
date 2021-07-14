@@ -2,6 +2,8 @@ import React from 'react';
 import UpdateContent from './UpdateContent';
 import styled from 'styled-components';
 
+import { withTranslation } from 'react-i18next';
+
 const AboutH2Wrapper = styled.h2`
   padding: 0px 0px 5px 0px;
   border-bottom: 2px solid #999999;
@@ -56,6 +58,7 @@ const ContentWrapper = styled.div`
 //Class Component
 class About extends React.Component {
   render() {
+    const { t } = this.props;
     return (
       <React.Fragment>
         <ContentWrapper>
@@ -63,8 +66,10 @@ class About extends React.Component {
 
           <ul>
             <br />
-            <DisableListDot>横田　光悦 (Koetsu Yokota)</DisableListDot>
-            <DisableListDot>東北大学大学院 情報科学研究科 応用情報科学専攻 修士2年</DisableListDot>
+            <DisableListDot>{t('横田　光悦')}</DisableListDot>
+            <DisableListDot>
+              {t('東北大学大学院 情報科学研究科 応用情報科学専攻 修士2年')}
+            </DisableListDot>
             <DisableListDot>
               <a
                 href="https://www.smapip.is.tohoku.ac.jp/"
@@ -242,4 +247,4 @@ class About extends React.Component {
   }
 }
 
-export default About;
+export default withTranslation()(About);
