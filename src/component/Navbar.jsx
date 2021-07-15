@@ -47,6 +47,7 @@ const LngWrapper = styled.li`
   }
   cursor: pointer;
   color: ${(props) => (props.language === 'en' ? '#fff' : '#888')};
+  margin-right: 5px;
 `;
 const GapWrapper = styled.li`
   margin: 0 10px;
