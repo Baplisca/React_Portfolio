@@ -20,8 +20,9 @@ const UpdateHrWrapper = styled.div`
 class UpdateContent extends React.Component {
   render() {
     const UpdateItems = [
-      { value: 'TOEICスコア更新', date: '2020.6.8' },
-      { value: 'インターン更新', date: '2020.4.10' },
+      { value: '一部英語対応', date: '2021.7.15' },
+      { value: 'TOEICスコア更新', date: '2021.6.8' },
+      { value: 'インターン更新', date: '2021.4.10' },
       { value: 'Aboutページ更新', date: '2020.11.18' },
       {
         value: <a href="https://baplisca.herokuapp.com/">React適用に伴うサイト移動</a>,
