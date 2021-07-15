@@ -36,6 +36,7 @@ const MyNavLink = styled(NavLink)`
     // border: none;
     // border-radius: 10px;
     color: #fff;
+    border-bottom: solid 2px cyan;
   }
   :hover {
     color: #fff;
