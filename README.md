@@ -21,3 +21,9 @@ You will see this project on your browser.
 ### CSS in JS
 
 ・Styled Component
+
+### Other
+
+[・i18next](https://react.i18next.com/) to support English
+
+[・react-image](https://github.com/mbrevda/react-image) to read images in bulk instead of packets
