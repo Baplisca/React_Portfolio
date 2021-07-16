@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react';
+import React, { Component } from 'react';
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
@@ -47,7 +47,7 @@ const LngWrapper = styled.li`
     color: #fff;
   }
   cursor: pointer;
-  color: ${(props) => (props.language === 'en' ? '#fff' : '#888')};
+  color: ${(props) => (props.isJap ? '#fff' : '#888')};
   margin-right: 5px;
 `;
 const GapWrapper = styled.li`
@@ -55,10 +55,20 @@ const GapWrapper = styled.li`
   color: #fff;
 `;
 class Navbar extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isJap: true,
+    };
+  }
   render() {
     const { t, i18n } = this.props;
     const changeLanguage = (lng) => {
       i18n.changeLanguage(lng);
+      const isJap = lng === 'ja';
+      this.setState({
+        isJap: isJap,
+      });
     };
     return (
       <React.Fragment>
@@ -81,10 +91,16 @@ class Navbar extends Component {
               </MyNavLink>
             </li>
             <GapWrapper>|</GapWrapper>
-            <LngWrapper language={!i18n.language} onClick={() => changeLanguage('ja')}>
+            <LngWrapper
+              language={!i18n.language}
+              onClick={() => changeLanguage('ja')}
+              isJap={this.state.isJap}>
               あ
             </LngWrapper>
-            <LngWrapper language={i18n.language} onClick={() => changeLanguage('en')}>
+            <LngWrapper
+              language={i18n.language}
+              onClick={() => changeLanguage('en')}
+              isJap={!this.state.isJap}>
               A
             </LngWrapper>
           </HeaderMenu>
