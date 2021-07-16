@@ -91,16 +91,10 @@ class Navbar extends Component {
               </MyNavLink>
             </li>
             <GapWrapper>|</GapWrapper>
-            <LngWrapper
-              language={!i18n.language}
-              onClick={() => changeLanguage('ja')}
-              isJap={this.state.isJap}>
+            <LngWrapper onClick={() => changeLanguage('ja')} isJap={this.state.isJap}>
               あ
             </LngWrapper>
-            <LngWrapper
-              language={i18n.language}
-              onClick={() => changeLanguage('en')}
-              isJap={!this.state.isJap}>
+            <LngWrapper onClick={() => changeLanguage('en')} isJap={!this.state.isJap}>
               A
             </LngWrapper>
           </HeaderMenu>
