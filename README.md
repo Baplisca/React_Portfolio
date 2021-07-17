@@ -27,3 +27,7 @@ You will see this project on your browser.
 [・i18next](https://react.i18next.com/) to support English
 
 [・react-image](https://github.com/mbrevda/react-image) to read images in bulk instead of packets
+
+[・font-awesome](https://fontawesome.com/) icon
+
+[・react-responsive](https://github.com/contra/react-responsive) media query in react
