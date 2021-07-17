@@ -5,6 +5,11 @@ import { NavLink } from 'react-router-dom';
 import './i18n';
 import { withTranslation } from 'react-i18next';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAddressCard, faLaptopCode, faUserCircle } from '@fortawesome/free-solid-svg-icons';
+
+import MediaQuery from 'react-responsive';
+
 const HeaderWrapper = styled.div`
   position: sticky;
   top: 0px;
@@ -54,6 +59,7 @@ const GapWrapper = styled.li`
   margin: 0 10px;
   color: #fff;
 `;
+
 class Navbar extends Component {
   constructor(props) {
     super(props);
@@ -77,16 +83,25 @@ class Navbar extends Component {
           <HeaderMenu>
             <li>
               <MyNavLink activeClassName="active" exact to="/">
+                <MediaQuery minWidth={500}>
+                  <FontAwesomeIcon icon={faAddressCard} style={{ 'margin-right': '10px' }} />
+                </MediaQuery>
                 {t('About')}
               </MyNavLink>
             </li>
             <li>
               <MyNavLink activeClassName="active" to="/work">
+                <MediaQuery minWidth={500}>
+                  <FontAwesomeIcon icon={faLaptopCode} style={{ 'margin-right': '10px' }} />
+                </MediaQuery>
                 Work
               </MyNavLink>
             </li>
             <li>
               <MyNavLink activeClassName="active" to="/contact">
+                <MediaQuery minWidth={500}>
+                  <FontAwesomeIcon icon={faUserCircle} style={{ 'margin-right': '10px' }} />
+                </MediaQuery>
                 Contact
               </MyNavLink>
             </li>
