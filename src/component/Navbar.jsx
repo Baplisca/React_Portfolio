@@ -14,12 +14,11 @@ const HeaderWrapper = styled.div`
   position: sticky;
   top: 0px;
   z-index: 100;
-
+  width: 100%;
   background-color: #343a40;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px;
 
   height: 50px;
 `;
