@@ -22,9 +22,9 @@ import heuristic from '../images/heuristic.gif';
 import pre_annealing from '../images/no_annealing.jpeg';
 import aft_annealing from '../images/annealing.jpeg';
 
-import tapitapi1 from '../images/tapitapi1.png';
-import tapitapi2 from '../images/tapitapi2.png';
-import tapitapi3 from '../images/tapitapi3.png';
+import tapitapi1 from '../images/tapitapi1.jpg';
+import tapitapi2 from '../images/tapitapi2.jpg';
+import tapitapi3 from '../images/tapitapi3.jpg';
 
 const WorkH2Wrapper = styled.h2`
   padding: 0px 0px 5px 0px;

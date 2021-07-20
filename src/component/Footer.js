@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import twitter from '../images/twitter-icon.jpg';
-import github from '../images/github-icon2.png';
+import github from '../images/github-icon2.jpg';
 import hatena from '../images/hatena-icon2.jpeg';
 
 const FooterWrapper = styled.div`
