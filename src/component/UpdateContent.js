@@ -20,6 +20,7 @@ const UpdateHrWrapper = styled.div`
 class UpdateContent extends React.Component {
   render() {
     const UpdateItems = [
+      { value: 'アルバイト更新', date: '2021.8.5' },
       { value: '一部英語対応', date: '2021.7.15' },
       { value: 'TOEICスコア更新', date: '2021.6.8' },
       { value: 'インターン更新', date: '2021.4.10' },

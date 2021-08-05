@@ -114,12 +114,14 @@ class About extends React.Component {
             <br />
           </ul>
 
-          <AboutH2Wrapper>Employment</AboutH2Wrapper>
+          <AboutH2Wrapper>Arbeit</AboutH2Wrapper>
           <ul>
             <br />
             <li>{t('東北電力さんと機械学習を用いた共同研究 (RA) 2019.4 ~ 2020.3')}</li>
             <br />
             <li>{t('東北大学 プログラミング演習A (TA) 2020.4 ~ 2020.7')}</li>
+            <br />
+            <li>{t('楽天 Webアプリケーションエンジニア 2021.7 ~')}</li>
             <br />
           </ul>
 
