@@ -129,7 +129,7 @@ class About extends React.Component {
           <ul>
             <br />
             <li>
-              {t('MUIT　2020.8 (3日間)')}{' '}
+              {t('MUIT　サーバーサイド　2020.8 (3日間)')}{' '}
               <a
                 href="https://baplisca.hatenablog.com/entry/intern/muit"
                 rel="noreferrer noopener"
@@ -217,7 +217,7 @@ class About extends React.Component {
             <br />
             <li>{t('ピアノ (キーボード)')}</li>
             <br />
-            <li>{t('野球観戦')}</li>
+            <li>{t('野球観戦 (楽天ファン)')}</li>
             <br />
             <li>{t('英会話')}</li>
             <br />
