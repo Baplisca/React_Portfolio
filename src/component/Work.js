@@ -17,14 +17,11 @@ import game2_2 from '../images/Game2-2.jpeg';
 import game2_3 from '../images/Game2-3.jpeg';
 import game2_4 from '../images/Game2-4.jpeg';
 
-import heuristic from '../images/heuristic.gif';
-
-import pre_annealing from '../images/no_annealing.jpeg';
-import aft_annealing from '../images/annealing.jpeg';
-
 import tapitapi1 from '../images/tapitapi1.jpg';
 import tapitapi2 from '../images/tapitapi2.jpg';
 import tapitapi3 from '../images/tapitapi3.jpg';
+
+import rakutenRecipe from '../images/rakutenRecipe.png';
 
 const WorkH2Wrapper = styled.h2`
   padding: 0px 0px 5px 0px;
@@ -426,46 +423,6 @@ class Work extends React.Component {
           </details>
           <br />
           <br />
-          <WorkH2Wrapper>卒業論文のシミュレーション結果</WorkH2Wrapper>
-          <p>
-            「ヒューリスティックソルバーによる安定した電力システムの構築と量子アニーリングによる比較」というテーマで研究を行いました.
-          </p>
-          <p>以下が研究の成果物の一部になります.</p>
-          <p>
-            こちらが
-            <a
-              href="https://journals.aps.org/pre/abstract/10.1103/PhysRevE.80.046112"
-              rel="noreferrer noopener"
-              target="_blank">
-              先行研究のアルゴリズム
-            </a>
-            にしたがって, 最適化を行った図です.
-          </p>
-          <CenterWrapper>
-            <FlexWrapper>
-              <Image
-                url={heuristic}
-                alt="電力最適化シミュレーション結果"
-                width="80%"
-                height="80%"
-              />
-            </FlexWrapper>
-          </CenterWrapper>
-          <div style={{ clear: 'left' }} />
-          <p>
-            量子アニーリングを用いて, 最適化すると, 下の図のようになります.
-            <br />
-            <CenterWrapper>(1枚目最適化前, 2枚目最適化後)</CenterWrapper>
-          </p>
-          <CenterWrapper>
-            <FlexWrapper>
-              <Image url={pre_annealing} alt="電力最適化前" width="50%" height="50%" />
-              <Image url={aft_annealing} alt="電力最適化後" width="50%" height="50%" />
-            </FlexWrapper>
-          </CenterWrapper>
-          <div style={{ clear: 'left' }} />
-          <br />
-          <p>言語はPythonで, グラフィックライブラリはNetworkXを用いました.</p>
           <WorkH2Wrapper>タピタピ</WorkH2Wrapper>
           <p>ハッカソンで制作しました</p>
           <p>コロナ禍でタピオカを満喫したいタピオカ女性向け混雑表示・レコメンドアプリです</p>
@@ -482,6 +439,46 @@ class Work extends React.Component {
             </FlexWrapper>
           </CenterWrapper>
           <div style={{ clear: 'left' }} />
+          <br />
+          <br />
+          <WorkH2Wrapper>Dialogflowを用いたチャットボット</WorkH2Wrapper>
+          <p>Dialogflowを用いて簡単なチャットボットを作りました</p>
+          <p>
+            外部APIとして
+            <a
+              href="https://webservice.rakuten.co.jp/api/recipecategorylist/"
+              rel="noreferrer noopener"
+              target="_blank">
+              楽天レシピAPI
+            </a>
+            を使用しています
+          </p>
+          <p>ランダムに料理カテゴリーを4つ作り、選んだカテゴリー内で人気のレシピを表示します</p>
+          <p>
+            右のアイコンから試せますが、メンテナンスしていないため動かなくなる時が来るかもしれません
+            (裏で動いているコード
+            <a
+              href="https://github.com/Baplisca/Dialogflow_RakutenRecipe"
+              rel="noreferrer noopener"
+              target="_blank">
+              リポジトリ
+            </a>
+            )
+          </p>
+          <df-messenger
+            style={{
+              '--df-messenger-button-titlebar-color': '#551ed6',
+              '--df-messenger-send-icon': '#878fac',
+              '--df-messenger-user-message': '#75f767',
+            }}
+            intent="WELCOME"
+            chat-title="楽天レシピからおすすめ献立提案Bot"
+            agent-id="9e6678ad-61e8-4b4b-82a7-1d6035f9e292"
+            language-code="ja"
+            chat-icon={rakutenRecipe}
+          />
+          <br />
+          <br />
           <br />
           <br />
           <br />
