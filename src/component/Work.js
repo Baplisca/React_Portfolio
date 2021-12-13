@@ -39,12 +39,7 @@ const PlWrapper = styled.div`
 const CenterWrapper = styled.div`
   text-align: center;
 `;
-const FlexWrapper = styled.div`
-  display: flex;
-  @media (max-width: 800px) {
-    display: block;
-  }
-`;
+
 const ContentWrapper = styled.div`
   margin: 0px auto 0px auto;
   padding: 30px 0px 0px 0px;
@@ -186,13 +181,9 @@ class Work extends React.Component {
           <WorkH2Wrapper>海洋生物たちの復讐</WorkH2Wrapper>
           <p>大学1年次に制作した初めてのゲーム作品です</p>
           <p>縦スクロールシューティングゲームで, C言語とDXライブラリを用いました</p>
-          <CenterWrapper>
-            <FlexWrapper>
-              <Image url={game1_1} alt="海洋生物たちの復讐 画像1" width="33%" height="33%" />
-              <Image url={game1_2} alt="海洋生物たちの復讐 画像2" width="33%" height="33%" />
-              <Image url={game1_3} alt="海洋生物たちの復讐 画像3" width="33%" height="33%" />
-            </FlexWrapper>
-          </CenterWrapper>
+          <Image url={game1_1} alt="海洋生物たちの復讐 画像1" width="33%" height="33%" />
+          <Image url={game1_2} alt="海洋生物たちの復讐 画像2" width="33%" height="33%" />
+          <Image url={game1_3} alt="海洋生物たちの復讐 画像3" width="33%" height="33%" />
           <div style={{ clear: 'left' }} />
           <br />
           <details>
@@ -261,14 +252,10 @@ class Work extends React.Component {
             </a>
             に登壇しました
           </p>
-          <CenterWrapper>
-            <FlexWrapper>
-              <Image url={game3_1} alt="ボイストラベラー 画像1" width="50%" height="50%" />
-              <Image url={game3_2} alt="ボイストラベラー 画像2" width="50%" height="50%" />
-              <Image url={game3_3} alt="ボイストラベラー 画像3" width="50%" height="50%" />
-              <Image url={game3_4} alt="ボイストラベラー 画像4" width="50%" height="50%" />
-            </FlexWrapper>
-          </CenterWrapper>
+          <Image url={game3_1} alt="ボイストラベラー 画像1" width="50%" height="50%" />
+          <Image url={game3_2} alt="ボイストラベラー 画像2" width="50%" height="50%" />
+          <Image url={game3_3} alt="ボイストラベラー 画像3" width="50%" height="50%" />
+          <Image url={game3_4} alt="ボイストラベラー 画像4" width="50%" height="50%" />
           <div style={{ clear: 'left' }} />
           <br />
           <details>
@@ -345,14 +332,10 @@ class Work extends React.Component {
           <p>3Dゲームを作りたい and Blenderの勉強目的で制作した3Dアクションゲーム</p>
           <p>規模がデカすぎて, 制作は中断しています</p>
           <p>言語はC#で, ゲームエンジンはUnityを使用しています</p>
-          <CenterWrapper>
-            <FlexWrapper>
-              <Image url={game2_1} alt="タダノアクション 画像1" width="50%" height="50%" />
-              <Image url={game2_2} alt="タダノアクション 画像2" width="50%" height="50%" />
-              <Image url={game2_3} alt="タダノアクション 画像3" width="50%" height="50%" />
-              <Image url={game2_4} alt="タダノアクション 画像4" width="50%" height="50%" />
-            </FlexWrapper>
-          </CenterWrapper>
+          <Image url={game2_1} alt="タダノアクション 画像1" width="50%" height="50%" />
+          <Image url={game2_2} alt="タダノアクション 画像2" width="50%" height="50%" />
+          <Image url={game2_3} alt="タダノアクション 画像3" width="50%" height="50%" />
+          <Image url={game2_4} alt="タダノアクション 画像4" width="50%" height="50%" />
           <div style={{ clear: 'left' }} />
           <br />
           <details>
@@ -431,13 +414,9 @@ class Work extends React.Component {
             Studioを使用しています
           </p>
           <p>下の図はAndroidでの表示になります</p>
-          <CenterWrapper>
-            <FlexWrapper>
-              <Image url={tapitapi1} alt="タピタピ 画像1" width="33%" height="33%" />
-              <Image url={tapitapi2} alt="タピタピ 画像2" width="33%" height="33%" />
-              <Image url={tapitapi3} alt="タピタピ 画像3" width="33%" height="33%" />
-            </FlexWrapper>
-          </CenterWrapper>
+          <Image url={tapitapi1} alt="タピタピ 画像1" width="33%" height="33%" />
+          <Image url={tapitapi2} alt="タピタピ 画像2" width="33%" height="33%" />
+          <Image url={tapitapi3} alt="タピタピ 画像3" width="33%" height="33%" />
           <div style={{ clear: 'left' }} />
           <br />
           <br />
