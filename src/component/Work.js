@@ -1,7 +1,8 @@
 import React from 'react';
 
 import styled from 'styled-components';
-import Image from '../component/Image';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import { Carousel } from 'react-responsive-carousel';
 
 import game1_1 from '../images/Game1-1.jpeg';
 import game1_2 from '../images/Game1-2.jpeg';
@@ -181,10 +182,13 @@ class Work extends React.Component {
           <WorkH2Wrapper>海洋生物たちの復讐</WorkH2Wrapper>
           <p>大学1年次に制作した初めてのゲーム作品です</p>
           <p>縦スクロールシューティングゲームで, C言語とDXライブラリを用いました</p>
-          <Image url={game1_1} alt="海洋生物たちの復讐 画像1" width="33%" height="33%" />
-          <Image url={game1_2} alt="海洋生物たちの復讐 画像2" width="33%" height="33%" />
-          <Image url={game1_3} alt="海洋生物たちの復讐 画像3" width="33%" height="33%" />
-          <div style={{ clear: 'left' }} />
+          <CenterWrapper>
+            <Carousel autoPlay infiniteLoop>
+              <img src={game1_1} alt="海洋生物たちの復讐 画像1" />
+              <img src={game1_2} alt="海洋生物たちの復讐 画像2" />
+              <img src={game1_3} alt="海洋生物たちの復讐 画像3" />
+            </Carousel>
+          </CenterWrapper>
           <br />
           <details>
             <summary>動画Ver</summary>
@@ -252,11 +256,12 @@ class Work extends React.Component {
             </a>
             に登壇しました
           </p>
-          <Image url={game3_1} alt="ボイストラベラー 画像1" width="50%" height="50%" />
-          <Image url={game3_2} alt="ボイストラベラー 画像2" width="50%" height="50%" />
-          <Image url={game3_3} alt="ボイストラベラー 画像3" width="50%" height="50%" />
-          <Image url={game3_4} alt="ボイストラベラー 画像4" width="50%" height="50%" />
-          <div style={{ clear: 'left' }} />
+          <Carousel autoPlay infiniteLoop>
+            <img src={game3_1} alt="ボイストラベラー 画像1" />
+            <img src={game3_2} alt="ボイストラベラー 画像2" />
+            <img src={game3_3} alt="ボイストラベラー 画像3" />
+            <img src={game3_4} alt="ボイストラベラー 画像4" />
+          </Carousel>
           <br />
           <details>
             <summary>動画Ver</summary>
@@ -332,11 +337,12 @@ class Work extends React.Component {
           <p>3Dゲームを作りたい and Blenderの勉強目的で制作した3Dアクションゲーム</p>
           <p>規模がデカすぎて, 制作は中断しています</p>
           <p>言語はC#で, ゲームエンジンはUnityを使用しています</p>
-          <Image url={game2_1} alt="タダノアクション 画像1" width="50%" height="50%" />
-          <Image url={game2_2} alt="タダノアクション 画像2" width="50%" height="50%" />
-          <Image url={game2_3} alt="タダノアクション 画像3" width="50%" height="50%" />
-          <Image url={game2_4} alt="タダノアクション 画像4" width="50%" height="50%" />
-          <div style={{ clear: 'left' }} />
+          <Carousel autoPlay infiniteLoop>
+            <img src={game2_1} alt="タダノアクション 画像1" />
+            <img src={game2_2} alt="タダノアクション 画像2" />
+            <img src={game2_3} alt="タダノアクション 画像3" />
+            <img src={game2_4} alt="タダノアクション 画像4" />
+          </Carousel>
           <br />
           <details>
             <summary>動画Ver</summary>
@@ -414,10 +420,13 @@ class Work extends React.Component {
             Studioを使用しています
           </p>
           <p>下の図はAndroidでの表示になります</p>
-          <Image url={tapitapi1} alt="タピタピ 画像1" width="33%" height="33%" />
-          <Image url={tapitapi2} alt="タピタピ 画像2" width="33%" height="33%" />
-          <Image url={tapitapi3} alt="タピタピ 画像3" width="33%" height="33%" />
-          <div style={{ clear: 'left' }} />
+          <CenterWrapper>
+            <Carousel autoPlay infiniteLoop centerMode centerSlidePercentage={60}>
+              <img src={tapitapi1} alt="タピタピ 画像1" />
+              <img src={tapitapi2} alt="タピタピ 画像2" />
+              <img src={tapitapi3} alt="タピタピ 画像3" />
+            </Carousel>
+          </CenterWrapper>
           <br />
           <br />
           <WorkH2Wrapper>Dialogflowを用いたチャットボット</WorkH2Wrapper>
