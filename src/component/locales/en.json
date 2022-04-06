@@ -47,29 +47,23 @@
   "東北大学 工学部 電気情報物理工学科 卒業 2020": {
     "3": "Tohoku University Faculty of Engineering Graduation Mar 2020"
   },
-  "東北大学大学院 情報科学研究科 応用情報科学専攻 修士2年": "Tohoku University Graduate School of Information Sciences second year of a Master's program",
   "東北大学大学院 情報科学研究科 応用情報科学専攻 入学 2020": {
     "4": "Tohoku University Graduate School of Information Sciences Admission Apr 2020"
   },
+  "東北大学大学院 情報科学研究科 応用情報科学専攻 卒業 2022.3": "Tohoku University Graduate School of Information Sciences Graduation Mar 2022",
   "東北電力さんと機械学習を用いた共同研究 (RA) 2019": {
     "4 ~ 2020": {
       "3": "Joint research using machine learning with Tohoku Electric Power Apr 2019 ~ Mar 2020"
     }
   },
-  "楽天 Webアプリケーションエンジニア 2021": {
-    "7 ~": "Rakuten Application Engineer Jul.2021 ~"
-  },
+  "楽天 Webアプリケーションエンジニア 2021.7 ~": "Rakuten Application Engineer Jul.2021 ~",
   "楽天　Webアプリケーションエンジニア　2020": {
     "11 ~ 2021": {
       "1 (3ヶ月)": "Rakuten Application Engineer Nov.2020 ~ Jan.2021 (3 months)"
     }
   },
   "横田　光悦": "Koetsu Yokota",
-  "田中研究室": "Tanaka Laboratory",
   "競技プログラミング": "Competitive programming",
-  "組合せ最適化問題": "Combinatorial optimization",
-  "英会話": "English conversation",
   "野球観戦 (楽天ファン)": "Watching baseball game",
-  "量子アニーリング": "Quantum annealing",
   "麻雀": "Mahjong"
 }

@@ -67,59 +67,12 @@ class About extends React.Component {
           <ul>
             <br />
             <DisableListDot>{t('横田　光悦')}</DisableListDot>
-            <DisableListDot>
-              {t('東北大学大学院 情報科学研究科 応用情報科学専攻 修士2年')}
-            </DisableListDot>
-            <DisableListDot>
-              <a
-                href="https://www.smapip.is.tohoku.ac.jp/"
-                title="田中研究室ホームページ"
-                rel="noreferrer noopener"
-                target="_blank">
-                {t('田中研究室')}
-              </a>
-            </DisableListDot>
+            <DisableListDot>Rakuten Group Inc. Application Engineer</DisableListDot>
             <br />
           </ul>
 
-          <AboutH2Wrapper>Field of study</AboutH2Wrapper>
-
+          <AboutH2Wrapper>Work</AboutH2Wrapper>
           <ul>
-            <br />
-            <li>{t('量子アニーリング')}</li>
-            <br />
-            <li>{t('組合せ最適化問題')}</li>
-            <br />
-          </ul>
-
-          <AboutH2Wrapper>Career</AboutH2Wrapper>
-          <ul>
-            <br />
-            <li>{t('東北大学大学院 情報科学研究科 応用情報科学専攻 入学 2020.4')}</li>
-            <br />
-            <li>{t('東北大学 工学部 電気情報物理工学科 卒業 2020.3')}</li>
-            <br />
-            <li>{t('東北大学 工学部 電気情報物理工学科 入学 2016.4')}</li>
-            <br />
-            <li>{t('宮城県宮城野高等学校 総合学科 卒業 2016.3')}</li>
-            <br />
-          </ul>
-
-          <AboutH2Wrapper>Qualifications</AboutH2Wrapper>
-          <ul>
-            <br />
-            <li>{t('応用情報技術者試験 (AP) 合格 2017.10')}</li>
-            <br />
-            <li>{t('TOEIC 875 (L 470 R 405) 2021.5')}</li>
-            <br />
-          </ul>
-
-          <AboutH2Wrapper>Arbeit</AboutH2Wrapper>
-          <ul>
-            <br />
-            <li>{t('東北電力さんと機械学習を用いた共同研究 (RA) 2019.4 ~ 2020.3')}</li>
-            <br />
-            <li>{t('東北大学 プログラミング演習A (TA) 2020.4 ~ 2020.7')}</li>
             <br />
             <li>{t('楽天 Webアプリケーションエンジニア 2021.7 ~')}</li>
             <br />
@@ -178,6 +131,29 @@ class About extends React.Component {
             <br />
           </ul>
 
+          <AboutH2Wrapper>Arbeit</AboutH2Wrapper>
+          <ul>
+            <br />
+            <li>{t('東北電力さんと機械学習を用いた共同研究 (RA) 2019.4 ~ 2020.3')}</li>
+            <br />
+            <li>{t('東北大学 プログラミング演習A (TA) 2020.4 ~ 2020.7')}</li>
+            <br />
+          </ul>
+
+          <AboutH2Wrapper>Educational background</AboutH2Wrapper>
+          <ul>
+            <li>{t('東北大学大学院 情報科学研究科 応用情報科学専攻 卒業 2022.3')}</li>
+            <br />
+            <li>{t('東北大学大学院 情報科学研究科 応用情報科学専攻 入学 2020.4')}</li>
+            <br />
+            <li>{t('東北大学 工学部 電気情報物理工学科 卒業 2020.3')}</li>
+            <br />
+            <li>{t('東北大学 工学部 電気情報物理工学科 入学 2016.4')}</li>
+            <br />
+            <li>{t('宮城県宮城野高等学校 総合学科 卒業 2016.3')}</li>
+            <br />
+          </ul>
+
           <AboutH2Wrapper>Awards (Official)</AboutH2Wrapper>
           <ul>
             <br />
@@ -192,6 +168,16 @@ class About extends React.Component {
             </li>
             <br />
           </ul>
+
+          <AboutH2Wrapper>Qualifications</AboutH2Wrapper>
+          <ul>
+            <br />
+            <li>{t('応用情報技術者試験 (AP) 合格 2017.10')}</li>
+            <br />
+            <li>{t('TOEIC 875 (L 470 R 405) 2021.5')}</li>
+            <br />
+          </ul>
+
           <AboutH2Wrapper>Free time</AboutH2Wrapper>
           <ul>
             <br />
@@ -218,8 +204,6 @@ class About extends React.Component {
             <li>{t('ピアノ (キーボード)')}</li>
             <br />
             <li>{t('野球観戦 (楽天ファン)')}</li>
-            <br />
-            <li>{t('英会話')}</li>
             <br />
           </ul>
 

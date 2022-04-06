@@ -19,6 +19,7 @@ const UpdateHrWrapper = styled.div`
 `;
 
 const UpdateItems = [
+  { value: '所属変更', date: '2022.4.6' },
   { value: '作品追加 (チャットボット)', date: '2021.12.12' },
   { value: 'アルバイト更新', date: '2021.8.5' },
   { value: '一部英語対応', date: '2021.7.15' },
