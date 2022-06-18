@@ -6,7 +6,7 @@ import './i18n';
 import { withTranslation } from 'react-i18next';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAddressCard, faLaptopCode, faUserCircle } from '@fortawesome/free-solid-svg-icons';
+import { faAddressCard, faLaptopCode } from '@fortawesome/free-solid-svg-icons';
 
 import MediaQuery from 'react-responsive';
 
@@ -95,14 +95,6 @@ class Navbar extends Component {
                   <FontAwesomeIcon icon={faLaptopCode} style={{ 'margin-right': '10px' }} />
                 </MediaQuery>
                 Work
-              </MyNavLink>
-            </li>
-            <li>
-              <MyNavLink activeClassName="active" to="/contact">
-                <MediaQuery minWidth={500}>
-                  <FontAwesomeIcon icon={faUserCircle} style={{ 'margin-right': '10px' }} />
-                </MediaQuery>
-                Contact
               </MyNavLink>
             </li>
             <GapWrapper>|</GapWrapper>

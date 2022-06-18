@@ -66,15 +66,15 @@ class About extends React.Component {
 
           <ul>
             <br />
-            <DisableListDot>{t('横田　光悦')}</DisableListDot>
-            <DisableListDot>Rakuten Group Inc. Application Engineer</DisableListDot>
+            <DisableListDot>{t('横田　光悦 (Yokota Koetsu)')}</DisableListDot>
+            <DisableListDot>Rakuten Group, Inc. Applications Engineer</DisableListDot>
             <br />
           </ul>
 
           <AboutH2Wrapper>Work</AboutH2Wrapper>
           <ul>
             <br />
-            <li>{t('楽天 Webアプリケーションエンジニア 2021.7 ~')}</li>
+            <li>{t('楽天 Webアプリケーションエンジニア 2022.4 ~')}</li>
             <br />
           </ul>
 
@@ -134,13 +134,15 @@ class About extends React.Component {
           <AboutH2Wrapper>Arbeit</AboutH2Wrapper>
           <ul>
             <br />
+            <li>{t('楽天　Webアプリケーションエンジニア　2021.7 ~ 2022.3')}</li>
+            <br />
             <li>{t('東北電力さんと機械学習を用いた共同研究 (RA) 2019.4 ~ 2020.3')}</li>
             <br />
             <li>{t('東北大学 プログラミング演習A (TA) 2020.4 ~ 2020.7')}</li>
             <br />
           </ul>
 
-          <AboutH2Wrapper>Educational background</AboutH2Wrapper>
+          <AboutH2Wrapper>Education</AboutH2Wrapper>
           <ul>
             <li>{t('東北大学大学院 情報科学研究科 応用情報科学専攻 卒業 2022.3')}</li>
             <br />

@@ -4,7 +4,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Navbar from './component/Navbar.jsx';
 import About from './component/About';
 import Work from './component/Work';
-import Contact from './component/Contact';
+import Footer from './component/Footer.js';
 
 ReactDOM.render(
   <BrowserRouter>
@@ -12,8 +12,8 @@ ReactDOM.render(
     <Switch>
       <Route exact path={'/'} component={About} />
       <Route path={'/work'} component={Work} />
-      <Route path={'/contact'} component={Contact} />
     </Switch>
+    <Footer />
   </BrowserRouter>,
   document.getElementById('root'),
 );
