@@ -268,12 +268,14 @@ class Work extends React.Component {
             </a>
             に登壇しました
           </p>
-          <Carousel autoPlay infiniteLoop>
-            <img src={game3_1} alt="ボイストラベラー 画像1" />
-            <img src={game3_2} alt="ボイストラベラー 画像2" />
-            <img src={game3_3} alt="ボイストラベラー 画像3" />
-            <img src={game3_4} alt="ボイストラベラー 画像4" />
-          </Carousel>
+          <CenterWrapper>
+            <Carousel autoPlay infiniteLoop>
+              <img src={game3_1} alt="ボイストラベラー 画像1" />
+              <img src={game3_2} alt="ボイストラベラー 画像2" />
+              <img src={game3_3} alt="ボイストラベラー 画像3" />
+              <img src={game3_4} alt="ボイストラベラー 画像4" />
+            </Carousel>
+          </CenterWrapper>
           <br />
           <details>
             <summary>動画Ver</summary>
@@ -349,12 +351,14 @@ class Work extends React.Component {
           <p>3Dゲームを作りたい and Blenderの勉強目的で制作した3Dアクションゲーム</p>
           <p>規模がデカすぎて, 制作は中断しています</p>
           <p>言語はC#で, ゲームエンジンはUnityを使用しています</p>
-          <Carousel autoPlay infiniteLoop>
-            <img src={game2_1} alt="タダノアクション 画像1" />
-            <img src={game2_2} alt="タダノアクション 画像2" />
-            <img src={game2_3} alt="タダノアクション 画像3" />
-            <img src={game2_4} alt="タダノアクション 画像4" />
-          </Carousel>
+          <CenterWrapper>
+            <Carousel autoPlay infiniteLoop>
+              <img src={game2_1} alt="タダノアクション 画像1" />
+              <img src={game2_2} alt="タダノアクション 画像2" />
+              <img src={game2_3} alt="タダノアクション 画像3" />
+              <img src={game2_4} alt="タダノアクション 画像4" />
+            </Carousel>
+          </CenterWrapper>
           <br />
           <details>
             <summary>動画Ver</summary>
