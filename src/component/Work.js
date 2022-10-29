@@ -73,6 +73,18 @@ const YoutubeWrapper = styled.div`
   }
 `;
 
+const PortraitImageWrapper = styled.div`
+  margin: 0px auto 0px auto;
+  padding: 30px 0px 0px 0px;
+  width: 400px;
+
+  @media (max-width: 800px) {
+    margin: 0px auto 0px auto;
+    padding: 30px 0px 0px 0px;
+    width: 85%;
+  }
+`;
+
 //Class Component
 class Work extends React.Component {
   render() {
@@ -420,13 +432,15 @@ class Work extends React.Component {
             Studioを使用しています
           </p>
           <p>下の図はAndroidでの表示になります</p>
-          <CenterWrapper>
-            <Carousel autoPlay infiniteLoop centerMode centerSlidePercentage={60}>
-              <img src={tapitapi1} alt="タピタピ 画像1" />
-              <img src={tapitapi2} alt="タピタピ 画像2" />
-              <img src={tapitapi3} alt="タピタピ 画像3" />
-            </Carousel>
-          </CenterWrapper>
+          <PortraitImageWrapper>
+            <CenterWrapper>
+              <Carousel autoPlay infiniteLoop centerMode centerSlidePercentage={80}>
+                <img src={tapitapi1} alt="タピタピ 画像1" />
+                <img src={tapitapi2} alt="タピタピ 画像2" />
+                <img src={tapitapi3} alt="タピタピ 画像3" />
+              </Carousel>
+            </CenterWrapper>
+          </PortraitImageWrapper>
           <br />
           <br />
           <WorkH2Wrapper>Dialogflowを用いたチャットボット</WorkH2Wrapper>
