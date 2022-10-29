@@ -178,10 +178,22 @@ class About extends React.Component {
             <br />
             <li>{t('TOEIC 875 (L 470 R 405) 2021.5')}</li>
             <br />
+            <li>
+              <a
+                href="https://bcert.me/bc/html/show-badge.html?b=dgbepbut"
+                rel="noreferrer noopener"
+                target="_blank">
+                {t('認定スクラムマスター® (SCM®)')}
+              </a>{' '}
+              {t('2022.10')}
+            </li>
+            <br />
           </ul>
 
           <AboutH2Wrapper>Free time</AboutH2Wrapper>
           <ul>
+            <br />
+            <li>{t('サウナ')}</li>
             <br />
             <li>{t('麻雀')}</li>
             <br />
