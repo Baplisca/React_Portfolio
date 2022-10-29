@@ -134,7 +134,7 @@ class About extends React.Component {
           <AboutH2Wrapper>Arbeit</AboutH2Wrapper>
           <ul>
             <br />
-            <li>{t('楽天　Webアプリケーションエンジニア　2021.7 ~ 2022.3')}</li>
+            <li>{t('楽天 Webアプリケーションエンジニア 2021.7 ~ 2022.3')}</li>
             <br />
             <li>{t('東北電力さんと機械学習を用いた共同研究 (RA) 2019.4 ~ 2020.3')}</li>
             <br />
@@ -144,6 +144,7 @@ class About extends React.Component {
 
           <AboutH2Wrapper>Education</AboutH2Wrapper>
           <ul>
+            <br />
             <li>{t('東北大学大学院 情報科学研究科 応用情報科学専攻 卒業 2022.3')}</li>
             <br />
             <li>{t('東北大学大学院 情報科学研究科 応用情報科学専攻 入学 2020.4')}</li>
