@@ -31,3 +31,5 @@ You will see this project on your browser.
 [・font-awesome](https://fontawesome.com/) icon
 
 [・react-responsive](https://github.com/contra/react-responsive) media query in react
+
+[・react-responsive-carousel](https://github.com/leandrowd/react-responsive-carousel) use auto slide show
