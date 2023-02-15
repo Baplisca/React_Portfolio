@@ -19,6 +19,21 @@ const UpdateHrWrapper = styled.div`
 `;
 
 const UpdateItems = [
+  {
+    value: (
+      <a
+        href="https://baplisca.hatenablog.com/entry/2022/12/30/150812"
+        rel="noreferrer noopener"
+        target="_blank">
+        2022年振り返り
+      </a>
+    ),
+    date: '2022.12.30',
+  },
+  {
+    value: <a href="https://baplisca.onrender.com/">Heroku有料化に伴うサイト移動</a>,
+    date: '2022.10.29',
+  },
   { value: '縦長画像のリサイズ・資格更新', date: '2022.10.29' },
   { value: '所属変更', date: '2022.4.6' },
   { value: '作品追加 (チャットボット)', date: '2021.12.12' },
