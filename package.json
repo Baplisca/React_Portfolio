@@ -21,10 +21,10 @@
     "styled-components": "^5.2.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "start": "GENERATE_SOURCEMAP=false react-scripts start",
+    "build": "GENERATE_SOURCEMAP=false react-scripts build",
+    "test": "GENERATE_SOURCEMAP=false react-scripts test",
+    "eject": "GENERATE_SOURCEMAP=false react-scripts eject",
     "format": "prettier --check ./src",
     "format:fix": "prettier --write ./src",
     "i18next-extract": "NODE_ENV=development babel './src/**/*.{js,jsx,ts,tsx}'"
